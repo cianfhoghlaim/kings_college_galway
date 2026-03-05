@@ -2,3 +2,5 @@ The (Interim) Dean of Students of the University of Galway accused me of plagiar
 
 
 These free and open source resources would not be possible to share without the hard work of ME, MYSELF and I.
+
+Metadata on the files prove that her summary of my heritage at the University as 'mental deterioration' is horrible.
