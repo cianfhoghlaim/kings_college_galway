@@ -1,0 +1,1 @@
+The (Interim) Dean of Students of the UNiversity fo galway accused me of plagiarism / academic dishonesty / a misdiagnosis / harrassment and refuses to give me my emails or counselling notes or anything from the University so I must defend my reputation.
