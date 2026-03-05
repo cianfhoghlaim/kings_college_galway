@@ -16,4 +16,6 @@ Usage Policy:
 
 Not allowed to be used by (Professor) Anthony Hall, (Titleless) Seán Ó Grádaigh and (Professor) Ciara Meehan due to their educational malpractice claiming I cannot receive an academic reference and claiming I cannot retrain and claiming that I am 'mentally deteriorated' and claiming I have bipolar/schizoaffective disorder contrary to the diagnosis given to me by Student Counselling and Student Health Unit and Disability Office of Anxiety Disorder / Compelx Post-Traumatic Stress Disorder. 
 
+Their efforts to hinder my ability to teach / be employed / study and their illegal alignment with Professor Colm McDonald's misdiagnosis which was completely parallel and separate from my validated counselling and Disability Allowance for (C)PTSD has now spread INTERNATIONALLY
+
 Free to use for everyone else if they make an effort to share the source with their course to ensure fair usage.
