@@ -1,0 +1,26 @@
+﻿//Problem 3: Max Input Finder
+//Name: Cian Mac Liatháin
+//ID: 11476078
+
+AskUser, Input		// ask user for input value
+        Store value
+        Skipcond 400  // check if input is 0, if so print max, if not compare to max
+        Jump CheckMax
+        Jump PrintMax
+
+CheckMax, Load max
+		Subt value
+		Skipcond 000 // check if max - value < 0, if so, re-assign max
+		Jump AskUser
+		Load value
+		Store max
+		Jump AskUser
+
+PrintMax, Load max
+        Output // Output the max number
+		Halt // terminate the program
+
+/pseudo-ops to set the memory of variables to 0
+value, DEC 00
+max, DEC 00
+

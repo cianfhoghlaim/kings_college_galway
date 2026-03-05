@@ -1,0 +1,56 @@
+body {
+    text-align: center;
+}
+
+.assignment-heading {
+    color: #772626;
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+#container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25% 50% 25% 100%;
+    grid-column-gap: 10px;
+}
+
+#council {
+    align-content: center;
+}
+.council-image {
+    border-radius: 50%;
+    max-width: 100px;
+}
+
+#footer {
+    width: 100%;
+    margin-right: 0;
+}
+
+.footer-link {
+    display: inline-block;
+}
+
+a:link, a:visited {
+    background-color: white;
+    border: 2px solid #772626;
+    padding: 10px 20px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover, a:active {
+    background-color: #772626;
+    color: green;
+}
+

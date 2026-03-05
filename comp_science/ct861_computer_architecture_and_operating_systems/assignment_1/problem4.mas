@@ -1,0 +1,218 @@
+﻿//Problem 4: Binomial Coefficient Calculator
+//Name: Cian Mac Liatháin
+//ID: 11476078
+
+Input
+Store n
+Input
+Store k
+
+Load n
+Subt k
+Store difference
+Skipcond 000	/ Check if n - k < 0
+Jump CheckEquality 
+Halt		/ Quits the program if k > n, impossible to calculate	
+
+
+CheckEquality, Skipcond 400 / Check n = k
+			Jump CheckIf1Less
+           Load one
+           Output		/If n = k output the trivial  Binomial Coefficient 1
+			Halt
+
+CheckIf1Less, Subt one
+        Skipcond 400
+        Jump CheckIf1
+        Load n
+        Output  / If k = n - 1, output n as the Binomial Coefficient
+        Halt
+
+CheckIf1, Load k
+		Subt one
+        Skipcond 400
+        Jump Calculate
+        Load n
+       	Output  / If k = 1, output n as the Binomial Coefficient
+        Halt
+        
+
+Calculate, Load n
+			Store N
+            JnS Factorialiser
+			Load resultFact
+			Store numerator
+            
+			Load k
+            Store N
+            JnS Factorialiser
+			Load resultFact
+			Store denominatorLeft /store k! in denominatorLeft, since X gets changed by Factorialiser
+
+
+            
+            Load difference
+            Store N
+            JnS Factorialiser
+            Load resultFact
+            Store denominatorRight /store (n-k)! in denominatorRight, since Y gets changed by Factorialiser
+
+            
+            Load denominatorLeft
+            Store X				/update X and Y with denominator values to multiply
+            Load denominatorRight
+			Store Y
+            JnS Multiplier
+			Load resultMult
+			Store denominator
+            
+			
+            Load numerator
+			Store X
+            Load denominator
+			Store Y
+            JnS Divider			/calculate n! / (k! * (n - k)!) with numerator = n! and denominator = (k! * (n - k)!)
+			Load resultDiv	
+			Output
+			Halt            
+
+//
+/ Factorial: result = N! = N * (N - 1) * (N - 2) ... * 1
+/ Input variables: N, N >= 0
+/ Output variables: resultFact
+
+Factorialiser, HEX 000 
+Load one
+Store resultFact
+
+floop, Load N
+		Skipcond 400 /if N == 0, resultFact is 1
+        Jump fnext
+        Jump exitFactorialiser
+fnext, Store X /store the number to factorialise in X
+		Load resultFact 
+        Store Y /store the latest result of subroutine in Y
+        JnS Multiplier /multiply X by Y
+        Load resultMult /load the product
+        Store resultFact /store the product as the latest result
+        Load N 
+        Subt one 
+        Store N
+		Jump floop /update the value of N as N-1, continue subroutine/multiplication
+
+exitFactorialiser, JumpI Factorialiser
+
+
+
+//
+/ Division: result = X / Y
+/ Input variables: X, Y
+/ Output variables: resultDiv
+//
+
+Divider, HEX 000 
+Clear
+Store resultDiv
+loop, Load X
+		Subt Y
+        Skipcond 000 / if X - Y < 0, division complete, exit
+        Jump subtractor / else, repeat subtraction
+        Jump exitDivider
+
+subtractor, Store X
+		Load resultDiv
+        Add one / increment the result
+        Store resultDiv
+        Load X
+        Subt Y
+        Skipcond 400 / if X - Y = 0, increment result, else repeat loop
+        Jump loop
+        Load resultDiv
+        Add one
+        Store resultDiv
+
+exitDivider, JumpI Divider
+
+
+
+//
+/ Multiplication: result = X * Y
+/ Input variables: X, Y
+/ Output variable: resultMult
+//
+
+Multiplier, HEX 000
+Clear
+Store resultMult
+
+/ The following subroutine was adapted from the example 
+/ found on marie.js.org:
+/ Multiplication Calculator
+/ by the MARIE.js Team
+/ Copyright (C) 2016. Licensed under the MIT License
+
+/ check if Y is negative, if -ve negate Y and set negative flag
+Load Y
+Skipcond 000
+Jump nonneg
+
+Subt Y
+Subt Y
+Store Y
+Clear
+Add one
+Store negflag
+Clear
+Jump loop
+
+nonneg,  Clear
+         Store negflag
+         / check if Y is zero, if it is, then we jump to halt
+         Load Y
+         Skipcond 400
+         Jump mloop / false
+         Jump halt / true
+
+/ Loop for performing iterative addition
+mloop,    Load resultMult
+         Add X
+         Store resultMult
+
+         Load Y
+         Subt one
+         Store Y
+	
+         Skipcond 400 / have we completed the multiplication?
+         Jump mloop / no; repeat loop
+         / yes, so exit the loop
+
+/ check for negative flag, if it is set, negate the result
+Load negflag
+Skipcond 800
+Jump halt
+
+/ negate result
+Load resultMult
+Subt resultMult
+Subt resultMult
+Store resultMult
+
+/exit subroutine
+halt, 	JumpI Multiplier
+
+N, DEC 00
+n, DEC 00
+k, DEC 00
+X, DEC 0
+Y, DEC 0
+one, DEC 1
+negflag, DEC 0
+difference, DEC 00
+resultMult, DEC 00
+resultDiv, DEC 00
+resultFact, DEC 00
+denominatorLeft, DEC 0
+denominatorRight, DEC 0
+denominator, DEC 00
+numerator, DEC 00
+

@@ -1,0 +1,386 @@
+Day 1 beginning. There are 0 cars in the showroom today.
+A new buyer #1 just appeared, wanting to buy a car for less than €7393, preferably Black.
+Buyer #1 is trying to buy a car but the showroom is empty.
+
+Day 2 beginning. There are 0 cars in the showroom today.
+A new seller #2 just appeared with a Blue car with registration 05-WH-7861 worth €12277.
+A new seller #1 just appeared with a Black car with registration 03-LH-0318 worth €12851.
+Seller #2 sold their Blue car with registration 05-WH-7861 worth €14732 to the showroom.
+This is sale #1.
+Buyer #1 is trying to buy a car but can't find a Black car for less than €7393.
+Seller #1 sold their Black car with registration 03-LH-0318 worth €15421 to the showroom.
+This is sale #2.
+Buyer #1 is trying to buy a car but can't find a Black car for less than €7393.
+
+Day 3 beginning. There are 2 cars in the showroom today.
+A new buyer #2 just appeared, wanting to buy a car for less than €15906, preferably Black.
+Buyer #2 bought a Black car with registration 03-LH-0318 worth €15421 from the showroom.
+This is purchase #1.
+Buyer #1 is trying to buy a car but can't find a Black car for less than €7393.
+
+Day 4 beginning. There are 1 cars in the showroom today.
+A new seller #3 just appeared with a Blue car with registration 12-KY-5499 worth €10178.
+A new buyer #3 just appeared, wanting to buy a car for less than €13732, preferably Black.
+Seller #3 sold their Blue car with registration 12-KY-5499 worth €12213 to the showroom.
+This is sale #3.
+Buyer #1 is trying to buy a car but can't find a Black car for less than €7393.
+Buyer #3 is trying to buy a car but can't find a Black car for less than €13732.
+Buyer #3 settled for a different car that they can afford.
+Buyer #3 bought a Blue car with registration 12-KY-5499 worth €12213 from the showroom.
+This is purchase #2.
+Buyer #1 is trying to buy a car but can't find a Black car for less than €7393.
+
+Day 5 beginning. There are 1 cars in the showroom today.
+A new seller #4 just appeared with a Black car with registration 06-WH-6515 worth €8015.
+Seller #4 sold their Black car with registration 06-WH-6515 worth €9618 to the showroom.
+This is sale #4.
+Buyer #1 is trying to buy a car but can't find a Black car for less than €7393.
+A new seller #5 just appeared with a Blue car with registration 03-LD-9131 worth €15424.
+Seller #5 sold their Blue car with registration 03-LD-9131 worth €18508 to the showroom.
+This is sale #5.
+A new buyer #4 just appeared, wanting to buy a car for less than €7864, preferably Silver.
+Buyer #1 is trying to buy a car but can't find a Black car for less than €7393.
+Buyer #4 is trying to buy a car but can't find a Silver car for less than €7864.
+
+Day 6 beginning. There are 3 cars in the showroom today.
+A new seller #6 just appeared with a Red car with registration 17-KY-2281 worth €15344.
+Seller #6 sold their Red car with registration 17-KY-2281 worth €18412 to the showroom.
+This is sale #6.
+Buyer #1 is trying to buy a car but can't find a Black car for less than €7393.
+Buyer #4 is trying to buy a car but can't find a Silver car for less than €7864.
+
+Day 7 beginning. There are 4 cars in the showroom today.
+A new seller #7 just appeared with a Blue car with registration 17-LH-4424 worth €16484.
+Seller #7 sold their Blue car with registration 17-LH-4424 worth €19780 to the showroom.
+This is sale #7.
+Buyer #1 is trying to buy a car but can't find a Black car for less than €7393.
+Buyer #4 is trying to buy a car but can't find a Silver car for less than €7864.
+A new seller #8 just appeared with a Silver car with registration 17-LH-6188 worth €9374.
+Seller #8 sold their Silver car with registration 17-LH-6188 worth €11248 to the showroom.
+This is sale #8.
+Buyer #1 is trying to buy a car but can't find a Black car for less than €7393.
+Buyer #4 is trying to buy a car but can't find a Silver car for less than €7864.
+A new seller #9 just appeared with a Red car with registration 04-MO-2359 worth €1850.
+Seller #9 sold their Red car with registration 04-MO-2359 worth €2220 to the showroom.
+This is sale #9.
+A new buyer #5 just appeared, wanting to buy a car for less than €18844, preferably White.
+Buyer #1 is trying to buy a car but can't find a Black car for less than €7393.
+A new buyer #6 just appeared, wanting to buy a car for less than €20664, preferably Black.
+Buyer #1 settled for a different car that they can afford.
+Buyer #1 bought a Red car with registration 04-MO-2359 worth €2220 from the showroom.
+This is purchase #3.
+Buyer #6 bought a Black car with registration 06-WH-6515 worth €9618 from the showroom.
+This is purchase #4.
+Buyer #5 is trying to buy a car but can't find a White car for less than €18844.
+Buyer #5 settled for a different car that they can afford.
+Buyer #5 bought a Blue car with registration 05-WH-7861 worth €14732 from the showroom.
+This is purchase #5.
+Buyer #4 is trying to buy a car but can't find a Silver car for less than €7864.
+
+Day 8 beginning. There are 4 cars in the showroom today.
+A new seller #10 just appeared with a Silver car with registration 09-W-4015 worth €9355.
+Seller #10 sold their Silver car with registration 09-W-4015 worth €11226 to the showroom.
+This is sale #10.
+Buyer #4 is trying to buy a car but can't find a Silver car for less than €7864.
+A new seller #11 just appeared with a Black car with registration 03-OY-2997 worth €6139.
+Seller #11 sold their Black car with registration 03-OY-2997 worth €7366 to the showroom.
+This is sale #11.
+Buyer #4 is trying to buy a car but can't find a Silver car for less than €7864.
+Buyer #4 settled for a different car that they can afford.
+Buyer #4 bought a Black car with registration 03-OY-2997 worth €7366 from the showroom.
+This is purchase #6.
+
+Day 9 beginning. There are 5 cars in the showroom today.
+A new seller #12 just appeared with a White car with registration 19-LH-8016 worth €9047.
+Seller #12 sold their White car with registration 19-LH-8016 worth €10856 to the showroom.
+This is sale #12.
+
+Day 10 beginning. There are 6 cars in the showroom today.
+A new seller #13 just appeared with a Red car with registration 05-T-9675 worth €3749.
+Seller #13 sold their Red car with registration 05-T-9675 worth €4498 to the showroom.
+This is sale #13.
+A new seller #14 just appeared with a Red car with registration 05-LM-9404 worth €4617.
+Seller #14 sold their Red car with registration 05-LM-9404 worth €5540 to the showroom.
+This is sale #14.
+A new buyer #7 just appeared, wanting to buy a car for less than €6293, preferably Red.
+Buyer #7 bought a Red car with registration 05-T-9675 worth €4498 from the showroom.
+This is purchase #7.
+
+Day 11 beginning. There are 7 cars in the showroom today.
+A new seller #15 just appeared with a Blue car with registration 21-LD-8416 worth €5019.
+Seller #15 sold their Blue car with registration 21-LD-8416 worth €6022 to the showroom.
+This is sale #15.
+A new seller #16 just appeared with a Silver car with registration 10-MN-7681 worth €14238.
+Seller #16 sold their Silver car with registration 10-MN-7681 worth €17085 to the showroom.
+This is sale #16.
+A new buyer #8 just appeared, wanting to buy a car for less than €23792, preferably Red.
+Buyer #8 bought a Red car with registration 17-KY-2281 worth €18412 from the showroom.
+This is purchase #8.
+
+Day 12 beginning. There are 8 cars in the showroom today.
+A new seller #17 just appeared with a White car with registration 21-WH-0135 worth €17783.
+Seller #17 sold their White car with registration 21-WH-0135 worth €21339 to the showroom.
+This is sale #17.
+A new seller #18 just appeared with a Blue car with registration 00-KK-3517 worth €4295.
+Seller #18 sold their Blue car with registration 00-KK-3517 worth €5154 to the showroom.
+This is sale #18.
+A new buyer #9 just appeared, wanting to buy a car for less than €21245, preferably Red.
+Buyer #9 bought a Red car with registration 05-LM-9404 worth €5540 from the showroom.
+This is purchase #9.
+
+Day 13 beginning. There are 9 cars in the showroom today.
+A new seller #19 just appeared with a Silver car with registration 00-KE-0952 worth €5464.
+A new buyer #10 just appeared, wanting to buy a car for less than €9057, preferably Black.
+Seller #19 sold their Silver car with registration 00-KE-0952 worth €6556 to the showroom.
+This is sale #19.
+Buyer #10 is trying to buy a car but can't find a Black car for less than €9057.
+Buyer #10 settled for a different car that they can afford.
+Buyer #10 bought a Blue car with registration 21-LD-8416 worth €6022 from the showroom.
+This is purchase #10.
+
+Day 14 beginning. There are 9 cars in the showroom today.
+A new seller #20 just appeared with a Black car with registration 05-LK-6715 worth €4707.
+Seller #20 sold their Black car with registration 05-LK-6715 worth €5648 to the showroom.
+This is sale #20.
+A new seller #21 just appeared with a Blue car with registration 02-G-8214 worth €5361.
+Seller #21 is trying to sell a car, but the showroom is full.
+A new seller #22 just appeared with a Blue car with registration 10-MN-6612 worth €4640.
+Seller #22 is trying to sell a car, but the showroom is full.
+A new buyer #11 just appeared, wanting to buy a car for less than €16459, preferably Blue.
+Buyer #11 bought a Blue car with registration 00-KK-3517 worth €5154 from the showroom.
+This is purchase #11.
+Seller #21 sold their Blue car with registration 02-G-8214 worth €6433 to the showroom.
+This is sale #21.
+Seller #22 is trying to sell a car, but the showroom is full.
+
+Day 15 beginning. There are 10 cars in the showroom today.
+A new seller #23 just appeared with a Blue car with registration 18-MO-2280 worth €8048.
+Seller #23 is trying to sell a car, but the showroom is full.
+A new buyer #12 just appeared, wanting to buy a car for less than €7350, preferably Blue.
+Buyer #12 bought a Blue car with registration 02-G-8214 worth €6433 from the showroom.
+This is purchase #12.
+Seller #22 sold their Blue car with registration 10-MN-6612 worth €5568 to the showroom.
+This is sale #22.
+Seller #23 is trying to sell a car, but the showroom is full.
+
+Day 16 beginning. There are 10 cars in the showroom today.
+A new seller #24 just appeared with a White car with registration 09-KK-5698 worth €5685.
+Seller #24 is trying to sell a car, but the showroom is full.
+A new buyer #13 just appeared, wanting to buy a car for less than €8169, preferably Silver.
+Buyer #13 bought a Silver car with registration 00-KE-0952 worth €6556 from the showroom.
+This is purchase #13.
+Seller #23 sold their Blue car with registration 18-MO-2280 worth €9657 to the showroom.
+This is sale #23.
+Seller #24 is trying to sell a car, but the showroom is full.
+
+Day 17 beginning. There are 10 cars in the showroom today.
+
+Day 18 beginning. There are 10 cars in the showroom today.
+A new seller #25 just appeared with a Silver car with registration 21-KE-7024 worth €10987.
+Seller #25 is trying to sell a car, but the showroom is full.
+A new buyer #14 just appeared, wanting to buy a car for less than €15690, preferably Black.
+Buyer #14 bought a Black car with registration 05-LK-6715 worth €5648 from the showroom.
+This is purchase #14.
+A new buyer #15 just appeared, wanting to buy a car for less than €9245, preferably White.
+Seller #24 sold their White car with registration 09-KK-5698 worth €6822 to the showroom.
+This is sale #24.
+A new buyer #16 just appeared, wanting to buy a car for less than €18086, preferably White.
+Buyer #15 bought a White car with registration 09-KK-5698 worth €6822 from the showroom.
+This is purchase #15.
+Seller #25 sold their Silver car with registration 21-KE-7024 worth €13184 to the showroom.
+This is sale #25.
+Buyer #16 bought a White car with registration 19-LH-8016 worth €10856 from the showroom.
+This is purchase #16.
+
+Day 19 beginning. There are 9 cars in the showroom today.
+A new seller #26 just appeared with a White car with registration 13-OY-4768 worth €16579.
+Seller #26 sold their White car with registration 13-OY-4768 worth €19894 to the showroom.
+This is sale #26.
+A new seller #27 just appeared with a Silver car with registration 19-WX-2733 worth €16175.
+Seller #27 is trying to sell a car, but the showroom is full.
+A new seller #28 just appeared with a Red car with registration 12-WH-1168 worth €4735.
+Seller #28 is trying to sell a car, but the showroom is full.
+A new buyer #18 just appeared, wanting to buy a car for less than €21755, preferably White.
+Buyer #18 bought a White car with registration 21-WH-0135 worth €21339 from the showroom.
+This is purchase #17.
+A new buyer #17 just appeared, wanting to buy a car for less than €15068, preferably White.
+Seller #27 sold their Silver car with registration 19-WX-2733 worth €19410 to the showroom.
+This is sale #27.
+Buyer #17 is trying to buy a car but can't find a White car for less than €15068.
+Buyer #17 settled for a different car that they can afford.
+Buyer #17 bought a Silver car with registration 17-LH-6188 worth €11248 from the showroom.
+This is purchase #18.
+Seller #28 sold their Red car with registration 12-WH-1168 worth €5682 to the showroom.
+This is sale #28.
+
+Day 20 beginning. There are 10 cars in the showroom today.
+
+Day 21 beginning. There are 10 cars in the showroom today.
+A new seller #29 just appeared with a Black car with registration 18-LK-0860 worth €8943.
+A new buyer #19 just appeared, wanting to buy a car for less than €13366, preferably White.
+Seller #29 is trying to sell a car, but the showroom is full.
+Buyer #19 is trying to buy a car but can't find a White car for less than €13366.
+Buyer #19 settled for a different car that they can afford.
+Buyer #19 bought a Silver car with registration 09-W-4015 worth €11226 from the showroom.
+This is purchase #19.
+Seller #29 sold their Black car with registration 18-LK-0860 worth €10731 to the showroom.
+This is sale #29.
+
+Day 22 beginning. There are 10 cars in the showroom today.
+A new buyer #20 just appeared, wanting to buy a car for less than €5135, preferably Silver.
+Buyer #20 is trying to buy a car but can't find a Silver car for less than €5135.
+
+Day 23 beginning. There are 10 cars in the showroom today.
+A new seller #30 just appeared with a Blue car with registration 02-WX-2262 worth €5114.
+Seller #30 is trying to sell a car, but the showroom is full.
+A new seller #31 just appeared with a Blue car with registration 07-W-3291 worth €19912.
+Seller #31 is trying to sell a car, but the showroom is full.
+A new buyer #21 just appeared, wanting to buy a car for less than €16059, preferably Silver.
+Buyer #21 bought a Silver car with registration 21-KE-7024 worth €13184 from the showroom.
+This is purchase #20.
+A new buyer #22 just appeared, wanting to buy a car for less than €14540, preferably Silver.
+Buyer #20 is trying to buy a car but can't find a Silver car for less than €5135.
+Buyer #22 is trying to buy a car but can't find a Silver car for less than €14540.
+Buyer #22 settled for a different car that they can afford.
+Buyer #22 bought a Blue car with registration 10-MN-6612 worth €5568 from the showroom.
+This is purchase #21.
+Seller #31 sold their Blue car with registration 07-W-3291 worth €23894 to the showroom.
+This is sale #30.
+Seller #30 sold their Blue car with registration 02-WX-2262 worth €6136 to the showroom.
+This is sale #31.
+Buyer #20 is trying to buy a car but can't find a Silver car for less than €5135.
+
+Day 24 beginning. There are 10 cars in the showroom today.
+A new seller #32 just appeared with a Blue car with registration 01-WX-3999 worth €8355.
+Seller #32 is trying to sell a car, but the showroom is full.
+A new seller #33 just appeared with a Red car with registration 13-OY-1302 worth €18985.
+Seller #33 is trying to sell a car, but the showroom is full.
+A new seller #34 just appeared with a Blue car with registration 08-CW-7268 worth €12497.
+Seller #34 is trying to sell a car, but the showroom is full.
+
+Day 25 beginning. There are 10 cars in the showroom today.
+A new seller #35 just appeared with a Red car with registration 14-MO-7169 worth €14649.
+Seller #35 is trying to sell a car, but the showroom is full.
+A new seller #36 just appeared with a Blue car with registration 02-L-1560 worth €4404.
+Seller #36 is trying to sell a car, but the showroom is full.
+A new seller #37 just appeared with a Silver car with registration 11-W-4147 worth €17063.
+Seller #37 is trying to sell a car, but the showroom is full.
+
+Day 26 beginning. There are 10 cars in the showroom today.
+A new seller #38 just appeared with a Blue car with registration 14-SO-4350 worth €11556.
+Seller #38 is trying to sell a car, but the showroom is full.
+A new buyer #23 just appeared, wanting to buy a car for less than €20796, preferably White.
+Buyer #23 bought a White car with registration 13-OY-4768 worth €19894 from the showroom.
+This is purchase #22.
+Buyer #20 is trying to buy a car but can't find a Silver car for less than €5135.
+Seller #38 sold their Blue car with registration 14-SO-4350 worth €13867 to the showroom.
+This is sale #32.
+Seller #37 is trying to sell a car, but the showroom is full.
+Seller #36 is trying to sell a car, but the showroom is full.
+Seller #35 is trying to sell a car, but the showroom is full.
+Seller #34 is trying to sell a car, but the showroom is full.
+Seller #33 is trying to sell a car, but the showroom is full.
+Seller #32 is trying to sell a car, but the showroom is full.
+Buyer #20 is trying to buy a car but can't find a Silver car for less than €5135.
+
+Day 27 beginning. There are 10 cars in the showroom today.
+A new seller #39 just appeared with a Silver car with registration 05-RN-3621 worth €4041.
+Seller #39 is trying to sell a car, but the showroom is full.
+A new seller #40 just appeared with a White car with registration 08-WH-8806 worth €3711.
+Seller #40 is trying to sell a car, but the showroom is full.
+A new buyer #24 just appeared, wanting to buy a car for less than €8786, preferably Blue.
+Buyer #24 bought a Blue car with registration 02-WX-2262 worth €6136 from the showroom.
+This is purchase #23.
+A new buyer #25 just appeared, wanting to buy a car for less than €23226, preferably Silver.
+Seller #37 sold their Silver car with registration 11-W-4147 worth €20475 to the showroom.
+This is sale #33.
+A new buyer #26 just appeared, wanting to buy a car for less than €11071, preferably Silver.
+Buyer #25 bought a Silver car with registration 10-MN-7681 worth €17085 from the showroom.
+This is purchase #24.
+Seller #40 sold their White car with registration 08-WH-8806 worth €4453 to the showroom.
+This is sale #34.
+Seller #39 is trying to sell a car, but the showroom is full.
+Buyer #20 is trying to buy a car but can't find a Silver car for less than €5135.
+Buyer #20 settled for a different car that they can afford.
+Buyer #20 bought a White car with registration 08-WH-8806 worth €4453 from the showroom.
+This is purchase #25.
+Seller #32 sold their Blue car with registration 01-WX-3999 worth €10026 to the showroom.
+This is sale #35.
+Seller #33 is trying to sell a car, but the showroom is full.
+Seller #34 is trying to sell a car, but the showroom is full.
+Seller #35 is trying to sell a car, but the showroom is full.
+Seller #36 is trying to sell a car, but the showroom is full.
+Seller #39 is trying to sell a car, but the showroom is full.
+Buyer #26 is trying to buy a car but can't find a Silver car for less than €11071.
+Buyer #26 settled for a different car that they can afford.
+Buyer #26 bought a Blue car with registration 18-MO-2280 worth €9657 from the showroom.
+This is purchase #26.
+Seller #33 sold their Red car with registration 13-OY-1302 worth €22782 to the showroom.
+This is sale #36.
+Seller #39 is trying to sell a car, but the showroom is full.
+Seller #36 is trying to sell a car, but the showroom is full.
+Seller #35 is trying to sell a car, but the showroom is full.
+Seller #34 is trying to sell a car, but the showroom is full.
+
+Day 28 beginning. There are 10 cars in the showroom today.
+A new buyer #27 just appeared, wanting to buy a car for less than €18040, preferably Black.
+A new buyer #28 just appeared, wanting to buy a car for less than €17941, preferably Silver.
+Buyer #27 bought a Black car with registration 18-LK-0860 worth €10731 from the showroom.
+This is purchase #27.
+Seller #39 sold their Silver car with registration 05-RN-3621 worth €4849 to the showroom.
+This is sale #37.
+Seller #34 is trying to sell a car, but the showroom is full.
+Seller #35 is trying to sell a car, but the showroom is full.
+Seller #36 is trying to sell a car, but the showroom is full.
+Buyer #28 bought a Silver car with registration 05-RN-3621 worth €4849 from the showroom.
+This is purchase #28.
+Seller #34 sold their Blue car with registration 08-CW-7268 worth €14996 to the showroom.
+This is sale #38.
+Seller #36 is trying to sell a car, but the showroom is full.
+Seller #35 is trying to sell a car, but the showroom is full.
+
+Day 29 beginning. There are 10 cars in the showroom today.
+A new buyer #29 just appeared, wanting to buy a car for less than €8305, preferably Silver.
+Buyer #29 is trying to buy a car but can't find a Silver car for less than €8305.
+A new seller #41 just appeared with a White car with registration 01-RN-5833 worth €4934.
+Buyer #29 settled for a different car that they can afford.
+Buyer #29 bought a Red car with registration 12-WH-1168 worth €5682 from the showroom.
+This is purchase #29.
+Seller #36 sold their Blue car with registration 02-L-1560 worth €5284 to the showroom.
+This is sale #39.
+Seller #35 is trying to sell a car, but the showroom is full.
+Seller #41 is trying to sell a car, but the showroom is full.
+
+Day 30 beginning. There are 10 cars in the showroom today.
+The showroom is getting ready to close.
+A new seller #42 just appeared with a Blue car with registration 09-CE-1959 worth €16643.
+A new buyer #31 just appeared, wanting to buy a car for less than €18192, preferably Silver.
+A new buyer #30 just appeared, wanting to buy a car for less than €10932, preferably Blue.
+Seller #42 is trying to sell a car, but the showroom is full.
+This is the last day, Seller #42 can't wait any longer.
+Seller #42 left the showroom without selling their car.
+Seller #35 is trying to sell a car, but the showroom is full.
+This is the last day, Seller #35 can't wait any longer.
+Seller #35 left the showroom without selling their car.
+Seller #41 is trying to sell a car, but the showroom is full.
+This is the last day, Seller #41 can't wait any longer.
+Seller #41 left the showroom without selling their car.
+Buyer #30 bought a Blue car with registration 01-WX-3999 worth €10026 from the showroom.
+This is purchase #30.
+Buyer #31 is trying to buy a car but can't find a Silver car for less than €18192.
+Buyer #31 settled for a different car that they can afford.
+Buyer #31 bought a Blue car with registration 14-SO-4350 worth €13867 from the showroom.
+This is purchase #31.
+
+Day 30 is over. The showroom is now closed to visitors.
+Total Sales: 39
+Total Purchases: 31
+Stock Remaining: 
+Car 0: Blue car with registration 03-LD-9131 worth €18508
+Car 1: Blue car with registration 17-LH-4424 worth €19780
+Car 2: Silver car with registration 19-WX-2733 worth €19410
+Car 3: Blue car with registration 07-W-3291 worth €23894
+Car 4: Silver car with registration 11-W-4147 worth €20475
+Car 5: Red car with registration 13-OY-1302 worth €22782
+Car 6: Blue car with registration 08-CW-7268 worth €14996
+Car 7: Blue car with registration 02-L-1560 worth €5284

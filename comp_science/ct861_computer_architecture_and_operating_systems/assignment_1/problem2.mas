@@ -1,0 +1,38 @@
+﻿//Problem 2: Evaluating Expression (C + 3 * A - (2 * B + D))
+//Name: Cian Mac Liatháin
+//ID: 11476078
+
+// Ask for user input and store variables A, B, C, D
+Input
+Store A
+Input
+Store B
+Input
+Store C
+Input
+Store D
+
+// Calculate the expression using repeated addition or subtraction as needed
+Load C
+Add A
+Add A
+Add A
+Subt B
+Subt B
+Subt D
+
+// Store the result in E
+Store E
+
+// Output result of the expression
+Output
+
+// Terminate the program
+Halt
+
+// Pseudo-ops to set the memory of variables to 0
+A, DEC 0
+B, DEC 0
+C, DEC 0
+D, DEC 0
+E, DEC 0

@@ -1,0 +1,40 @@
+body {
+    text-align: center;
+}
+
+.assignment-heading {
+    color: #772626;
+    font-size: 1.5em;
+}
+
+h2 h3{
+    font-size: 1.4em;
+}
+
+a:link {
+    color: #772626;
+}
+
+a:hover {
+    color: gold;
+}
+
+.footer-item {
+    display: inline-block;
+}
+
+a.footer-link:link, a.footer-link:visited {
+    background-color: white;
+    border: 2px solid #772626;
+    padding: 10px 20px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a.footer-link:hover, a.footer-link:active {
+    background-color: #772626;
+    color: gold;
+}
+
