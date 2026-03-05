@@ -14,6 +14,6 @@ You actually can't suspend someone for emails, you CAN pop them in Junk... there
 
 Usage Policy:
 
-Not allowed to be used by (Professor) Anthony Hall, (Titleless) Seán Ó Grádaigh and (Professor) Ciara Meehan due to their educational malpractice. 
+Not allowed to be used by (Professor) Anthony Hall, (Titleless) Seán Ó Grádaigh and (Professor) Ciara Meehan due to their educational malpractice claiming I cannot receive an academic reference and claiming I cannot retrain and claiming that I am 'mentally deteriorated' and claiming I have bipolar/schizoaffective disorder contrary to the diagnosis given to me by Student Counselling and Student Health Unit and Disability Office of Anxiety Disorder / Compelx Post-Traumatic Stress Disorder. 
 
 Free to use for everyone else if they make an effort to share the source with their course to ensure fair usage.
