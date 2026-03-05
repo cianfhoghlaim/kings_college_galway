@@ -18,4 +18,6 @@ Not allowed to be used by (Professor) Anthony Hall, (Titleless) Seán Ó Grádai
 
 Their efforts to hinder my ability to teach / be employed / study and their illegal alignment with Professor Colm McDonald's misdiagnosis which was completely parallel and separate from my validated counselling and Disability Allowance for (C)PTSD has now spread INTERNATIONALLY
 
+They reference 'abusive' emails but won't let me defend myself, and won't respond to my GDPR/FOI request. Suspicious!
+
 Free to use for everyone else if they make an effort to share the source with their course to ensure fair usage.
