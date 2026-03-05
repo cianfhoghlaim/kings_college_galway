@@ -1,0 +1,146 @@
+---
+title: "Assignment 2. ANOVA"
+author: "Name: Cian Mac Liatháin, ID: 11476078"
+date: "`r Sys.Date()`"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+library(agricolae)
+```
+
+## ST312 Assignment 2
+
+1. (35 Marks). Nationally, the abuse of methamphetamine has become a concern, not only because of the effects of drug abuse, but also because of the dangers associated with the labs that produce them. A random sample of a total of 11 counties in Iowa (stratified by size of county – small, medium, or large) produced the following ANOVA table relating the number of methamphetamine labs to the size of the county. Use this table to answer the following questions:
+
+One-way ANOVA: meth labs versus type
+
+|Source   	 |  DF   |      SS   |  	MS |   	F  |      	P|
+|------------|-------|-----------|-------|-------|---------|
+|type 	     |   2    |39.01	    | 19.505|  5.019|  0.039      
+|Error       |   8     |31.09     |	3.886  |       |
+|Total 	     |    10    | 70.67   |      |       |
+
+a. Fill in the values missing from the table. 
+b. What does the MS for the county type tell you?
+
+Mean Square is the Sum of Squares divided by its degrees of freedom, which in this case represents the variation between the means of the 3 groups (county sizes)
+
+c. Find the p-value for the F-test in the table. [hint: **carefully** use the `pf()` function in R]
+
+
+```{r}
+pf(5.019,2,8, lower.tail=F)
+```
+
+d. Describe the hypotheses tested by the F-test in the table, and using the p-value from part (c), give an appropriate conclusion. 
+
+The null hypothesis is that the three sizes of counties have the same average number of methamphetamine labs, i.e. $H_0: \alpha_1=\alpha_2=\alpha_3=0$. The alternative hypothesis is that at least one of the three sizes of counties has a different average number of meth labs scores than the other two. With a p-value of 0.0387, we reject the null hypothesis and conclude that at least at least one of the county sizes has a different average number of meth labs.
+
+2. (45 Marks). A group of friends who participate in a “fantasy baseball” league became curious about whether some of them take significantly more or less time to make their selections in the “fantasy draft” through which they select players. In the data (FantasyBaseball), there are records: the times (in seconds) that each of the eight friends (identified by their initials) took to make their 24 selections in 2008.
+
+```{r}
+library(Stat2Data)
+data(FantasyBaseball)
+```
+
+a. Produce boxplots and calculate descriptive statistics to compare the selection times for each participant. Comment on what they reveal. Also identify (by initials) which participant took the longest and which took the shortest time to make their selections. 
+
+```{r}
+FantasyBaseball  <- FantasyBaseball %>%  gather(person, time, - Round) 
+
+FantasyBaseball %>% ggplot(aes(person,time, fill=person))+geom_boxplot()
+
+FantasyBaseball %>% group_by(person) %>%  summarize(Count= n(),Mean = mean(time), StdDev=sd(time), Minimum = min(time), Q1 = quantile(time, 0.25), Median = median(time), Q3 = quantile(time, 0.75), Maximum=max(time))
+
+```
+We can see from the boxplots that most of the distributions are right-skewed. Comparing the means we can see that most of the group of friends take around the same time, but we can see that JW is much slower and TS is much faster on average than the rest of the group when making their selections.
+
+b. Conduct a one-way ANOVA to assess whether the data provide evidence that averages as far apart as these would be unlikely to occur by chance alone if there really were no differences among the participant in terms of their selection times. For now, assume that all conditions are met. Report the ANOVA table, test statistics, and p-value. Also summarize your conclusion. 
+
+```{r}
+anova <- aov(time~person, FantasyBaseball)
+summary(anova)
+```
+The one-way ANOVA results in a test statistic of 10.89, with a very small p-value of 1.79e-11. This small p-value leads us to reject $H_0$, ther eis evidence to suggest that there is a difference in population mean between the group of friends, that at least one of the people have a different mean selection time than the others.
+
+c. Use Fisher’s LSD procedure to assess which participants’ average selection times differ significantly from which others. 
+
+```{r}
+print(LSD.test(anova, trt="person"))
+```
+We can see from the Fisher's LSD output that that JW has a significantly longer average seleciton time than the others, and that TS has a significantly shorter average selection time than everyone else except for BK.
+
+d. Produce the normal probability plot of the residuals for the ANOVA model in (b), and comment on the appropriateness of the ANOVA model for these data. 
+
+```{r}
+## QQ plot of residuals (check normality)
+ggplot(anova, aes(sample = anova$residuals)) + geom_qq() + geom_qq_line()
+
+```
+We can see from the QQ plot that the residuals do not follow a normal distribution, there is significant deviation from the normal line in the upper tail of the plot.
+
+e. Transform the selection times using the natural log. Repeat your analysis of the data (b,c) and report your findings. Check the conditions necessary for conducting an ANOVA. 
+
+```{r}
+log_anova <- aov(log(time)~person, data=FantasyBaseball)
+summary(log_anova)
+FantasyBaseball$log_residuals <- log_anova$residuals
+```
+The ANOVA performed on the natural log-transformed data gives a test statistic of 12.99, and a very small p-value of 1.54e-13. We can again reject the null hypothesis, and  conclude that there is a significant difference in the natural log selection time of one of at least one of the friends.
+
+```{r}
+print(LSD.test(log_anova, trt="person"))
+```
+We can see from the Fisher's LSD output that there are more differences to be seen in the the natural log-transformed times. JW still takes significantly longer than all others on average, and TS still takes significantly shorter than all others on average, but we can also now see that DR and MF have significantly different average selection times.
+
+```{r}
+## QQ plot of residuals (check normality)
+ggplot(log_anova, aes(sample=log_anova$residuals)) + geom_qq() + geom_qq_line()
+
+## Residuals vs Fits (check constant variance)
+
+ggplot(FantasyBaseball, aes(x=person, y=log_residuals, color=person)) + geom_point()
+
+```
+
+We can see from the QQ plot that the log-transformed times are much closer to the normality required for ANOVA, although there is still some deviance from normality in the lower tail.
+
+We can see from the Residuals vs fits plot that each of the groups show relatively constant variance.
+
+
+f. Using the transformed data in (e), conduct a two-way ANOVA, and check the conditions necessary for conducting an ANOVA.
+
+
+```{r}
+FantasyBaseball$Round <- as.factor(FantasyBaseball$Round)
+
+twoway <- aov(log(time)~person+Round, data=FantasyBaseball)
+
+summary(twoway)
+
+```
+We can see from the two-way ANOVA that the p-value for the factor Person is very small at 1.55e-13, while the p-value for the factor Round is large at 0.226. There is evidence to suggest that persons have different log-transformed average selection time, and there is no evidence to suggest that differences in average selection time are effected by rounds.
+
+```{r}
+## QQ plot of residuals (check normality)
+ggplot(twoway, aes(sample = twoway$residuals)) + geom_qq() + geom_qq_line()
+
+## Residuals vs Fitted (check constant variance)
+ggplot(twoway, aes(x=fitted(twoway), y=residuals(twoway))) + geom_point()+geom_hline(yintercept = 0)+geom_smooth(aes(x=twoway$fitted.values, y = twoway$residuals), se=F)
+```
+We can see from the QQ plot the transformed data looks fairly normal for the most part but shows further deviance from normality in the lower tail.
+
+The Residuals vs Fitted plot shows that there is relatively constant variance.
+
+3. (20 Marks). List the conditions,  under which the following statement is true:
+
+- “In one-way ANOVA, MSGroups/MSE  has a F distribution with parameters K-1 and n-K”
+
+Here, we have K groups and n observations. 
+
+This is true when the null hypothesis that there are is no difference between the means of the population groups is true, and when the error terms are independent, follow a normal distribution, have zero mean and constant variance.

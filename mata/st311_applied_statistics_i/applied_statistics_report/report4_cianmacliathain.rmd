@@ -1,0 +1,81 @@
+---
+title: "Blood Alcohol Content"
+author: "Name: Cian Mac Liatháin ID: 11476078"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,eval = TRUE, comment = NA,warning=F,message=F)
+
+```
+
+```{r, include=F}
+# packages
+library(dplyr)
+library(ggplot2)
+
+```
+
+
+
+## Introduction
+
+How well does the number of beers a student drinks predict their blood alcohol content?
+
+The following research questions are of interest:
+
+Compare the relationship between blood alcohol content (BAC) and the number of beers consumed (Beers) between the population of males and the population of females. 
+
+
+## Subjective Impression
+
+A sample of, very willing, volunteers drank a randomly assigned number of cans of a certain brand of beer. A number of hours later a police officer measured their blood alcohol content, BAC. The gender of participants was also recorded.  
+
+
+
+```{r, echo=F}
+BAdata<-read.csv("/Users/seasta/Library/Mobile Documents/com~apple~CloudDocs/College/2020:2021/Maths/ST311 - Applied Statistics 1/9. Regression Modelling with Qualitative Predictors/Report Writing 4/BAdata.csv")
+```
+
+
+To explore the relationship between blood alcohol content (BAC) and the number of beers consumed (Beers), indicating which observations are from each gender.
+
+
+```{r}
+ggplot(BAdata,aes(x=Beers,y=BAC,colour=Gender))+geom_point()
+
+```
+
+
+
+## Formal Analysis 
+
+A linear regression model is fitted to the sample data to explain the variability in the response blood alcohol level with two predictors, the number of beers consumed and gender, i.e. the following model specification:
+
+$BAC_i=\beta_0+\beta_1Beers_i+\beta_2Gender_i+\epsilon_i$
+
+
+```{r}
+fit<-lm(BAC~Beers+Gender,data=BAdata)
+summary(fit)
+```
+
+Interpretation:
+
+In the model, GenderM is an indicator variable taking value 1 for students that are male, and 0 for students that are female. 
+
+The constant $\beta_0$, -1.03063: when Beers=0 and GenderM=0. The blood alcohol level of female students without any beers consumed is estimated to be -1.03063, on average.
+
+Coefficient $\beta_1$ of the predictor variable Beers, 1.59301: the blood alcohol level of both female and male students is estimated to increase by 1.59301 for each additional beer consumed, on average.
+
+Coefficient $\beta_2$ of the predictor variable GenderM, -0.02193: this is the difference on average in the blood alcohol level between female and male students, - i.e. the blood alcohol level of male students is less on average than female students by 0.02193.
+
+
+Inference:
+
+Testing for non zero coefficient $\beta_1$ of predictor Beers, the estimated effect is 1.59301, with standard error 0.11159, the test statistic is 14.276, with p-value <0.0001. There is evidence to reject the null hypothesis and evidence to suggest the true coefficient of Beers is not equal to 0, i.e. the effect of beers consumed on blood alcohol level is significant in the population.
+
+Testing for non zero coefficient $\beta_2$ of the indicator variable GenderM, the estimated effect is -0.02193, with standard error 0.54631,the test statistic is -0.040, with p-value 0.968 There is no evidence to reject the null hypothesis and no evidence to suggest the true coefficient of GenderM is not equal to 0, no evidence of a difference average blood alcohol level comparing male and female students in the population.
+
+
+

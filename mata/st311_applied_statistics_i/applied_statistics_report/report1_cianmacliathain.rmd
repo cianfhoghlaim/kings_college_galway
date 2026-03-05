@@ -1,0 +1,79 @@
+---
+title: "Student Survey"
+author: "Name: Cian Mac Liatháin, ID: 11476078"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,eval = TRUE, comment = NA,warning=F,message=F)
+
+```
+
+```{r, include=F}
+# packages
+library(dplyr)
+library(ggplot2)
+
+```
+
+
+
+## Introduction
+
+A survey of 1st year students included 21 questions about student living habits.
+For this report we are interested in exploring the distribution of number of hours listening to music weekly and to compare distributions of number of hours listening to music weekly between male and female respondents.
+
+
+## Subjective Impression
+
+The following output provides some summary statistics and graphical displays for Music_weekly_hrs observed in the sample.
+
+```{r, echo=F}
+student.survey<-read.csv("/Users/seasta/Library/Mobile Documents/com~apple~CloudDocs/College/2020:2021/Maths/ST311 - Applied Statistics 1/Data/studentsurvey.csv")
+```
+
+
+
+```{r }
+
+student.survey%>%summarise(n=n(),mean=mean(Music_weekly_hrs), 
+                           median=median(Music_weekly_hrs), 
+                           sd=sd(Music_weekly_hrs), 
+                           min= min(Music_weekly_hrs),  
+                           max=max(Music_weekly_hrs),
+                           IQR=IQR(Music_weekly_hrs))
+
+```
+
+```{r,echo=F, warning=F, fig.width=12}
+
+ggplot(student.survey,aes(x=Music_weekly_hrs))+geom_dotplot()+scale_x_continuous(breaks = scales::pretty_breaks(n = 15))
+ggplot(student.survey,aes(x=Music_weekly_hrs))+geom_histogram()+scale_x_continuous(breaks = scales::pretty_breaks(n = 15))
+ggplot(student.survey,aes(y=Music_weekly_hrs))+geom_boxplot()+scale_y_continuous(breaks = scales::pretty_breaks(n = 15))+coord_flip()
+ggplot(student.survey,aes(x=Music_weekly_hrs))+geom_density()+scale_x_continuous(breaks = scales::pretty_breaks(n = 15))
+
+
+```
+
+There were 25 respondents observed in this sample. The average weekly hours listening to music was 5.64 hours, with a lower median of 5. There was some variability in the responses, ranging from 0 to 35 hours with a standard deviation of 6.82 and an interquartile range of 5. The graphical displays of the data above show a left-skewed distribution with an extreme outlier of 35 hours, and values of 2 and 5 hours being the most common response. 
+
+
+To investigate if any difference exists when comparing Music_weekly_hrs by gender  the  following output provides some summary statistics and graphical displays for the female and male samples for comparison.
+
+
+```{r}
+
+student.survey%>%group_by(Gender)%>%summarise(n=n(),mean=mean(Music_weekly_hrs),median=median(Music_weekly_hrs), sd=sd(Music_weekly_hrs), min= min(Music_weekly_hrs),  max=max(Music_weekly_hrs))
+
+```
+
+```{r,echo=F,warning=FALSE, fig.width=12}
+ggplot(student.survey,aes(x=Music_weekly_hrs, fill=Gender))+geom_dotplot()+scale_x_continuous(breaks = scales::pretty_breaks(n = 15))
+ggplot(student.survey,aes(x=Music_weekly_hrs,fill=Gender))+geom_histogram()+scale_x_continuous(breaks = scales::pretty_breaks(n = 15))
+ggplot(student.survey,aes(y=Music_weekly_hrs,fill=Gender))+geom_boxplot()+scale_y_continuous(breaks = scales::pretty_breaks(n = 15))+coord_flip()
+ggplot(student.survey,aes(x=Music_weekly_hrs,fill=Gender))+geom_density(alpha=0.1)+scale_x_continuous(breaks = scales::pretty_breaks(n = 15))
+
+```
+Exploring the distribution by gender, there were 12 female and 13 male respondents. The average number of weekly hours listening to music was higher for the female sample than the male sample, with a mean of 8.25 compared to 3.23. The median number of weekly hours listening to music was also higher in the female sample, 5.75 compared to 2. There was more variability in the female sample, with a standard deviation of 8.89 compared to 2.74 in the male sample, and responses ranging from 1 to 35 compared to a range from 0 to 9 in the male sample.
+
+Plots of the data show a right-skewed distribution for the female sample with an outlier with a high number of weekly hours listen to music at 35 hours. Furthermore, the plots show a right-skewed distribution for the male sample with a high number of males listening to 2 hours of music per week.

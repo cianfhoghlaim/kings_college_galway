@@ -1,0 +1,106 @@
+---
+title: "Second-hand Textbooks"
+author: "Name: Cian Mac Liatháin ID: 11476078"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,eval = TRUE, comment = NA,warning=F,message=F)
+
+```
+
+```{r, include=F}
+# packages
+library(dplyr)
+library(ggplot2)
+library(GGally)
+library(car)
+```
+
+
+
+# Introduction
+
+A University bookshop sells second-hand textbooks and wishes to build a pricing model. Data for a sample of 25 recently sold second-hand textbooks were recorded which included the price of the book, Price, and the number of pages in the textbook, Pages. 
+
+The aim of this report is to build a model with number of pages as an explanatory variable of price ensuring the assumptions underlying  the model are valid. Use the model to assess whether the number of pages is a good predictor of price,  and if so  use the model to produce an interval estimate for the price of an individual book with 100 pages.
+
+
+# Subjective Impression
+
+
+```{r, echo=F}
+textbooks<-read.csv("/Users/seasta/Library/Mobile Documents/com~apple~CloudDocs/College/2020:2021/Maths/ST311 - Applied Statistics 1/11. Model Diagnostics/Report Writing 7/textbooks.csv")
+```
+
+
+The descriptive statistics and plots below summarise the sampled measurements.
+
+
+```{r}
+ggplot(data=textbooks, aes(x=Pages, y=(Price)))+geom_point()
+
+```
+```{r}
+cor(textbooks$Price, textbooks$Pages)
+```
+
+The Pearson correlation coefficient of 0.7417089 indicates a strong positive linear relationship between the pages in a book and its price in the sample of 25 books. This is reflected in the increasing linear pattern shown in the scatterplot.
+
+
+# Formal Analysis 
+
+The output and diagnostic plots provided below show the results of a simple linear
+regression fit of number of pages to the price of textbooks, $Price_i=\beta_0+\beta_1Pages_i+\epsilon_i$:
+
+
+```{r, fig.show='hold'}
+model1<-lm(Price~Pages,textbooks)
+summary(model1)
+plot(model1,1)
+plot(model1,2)
+```
+
+In order to use linear regression modelling of data, we are required to make assumptions about the linearity of the data, normality of residuals, homogeneity of residuals' variance and independence of residuals' error terms.
+
+A linear relationship is evident from the scatterplot above, as well as from the Pearson correlation coefficient of 0.7417089 indicating a strong positive linear relationship between the predictor and response variables.
+
+In our Residuals vs Fitted plot, we can see that the residuals have an expectation of 0 on average. We can see that as the fitted values increase, however, so does the variance of the residuals. This indicates heteroscedasticity in our model, non-constant variance of residuals.
+
+The Normal Q-Q plot can be used to investigate whether the residuals are normally distributed. If the residuals are normally distributed, they should lie along the diagonal line of equality. We can see in this output that there is some deviation in the tails but not strong evidence of departure from a normal distribution.
+
+Based on the diagnostic plots above, our required assumptions are not met using this model. The Residuals vs Fitted plot is indicating heteroscedasticity in our model, and for this reason a different model should be used that can allow for constant variance of the residuals.
+
+A Box-Cox transformation can be used to determine whether, and how, a model should be transformed.
+
+```{r, echo=T, out.width="3in"}
+boxCox(model1)
+summary(powerTransform(model1))
+
+```
+
+
+The confidence interval for the value of $\lambda$, the power on the response variable, $Y^{\lambda}$, is: -0.0542 < $\lambda$ < 0.6223. This interval doesn't contain $\lambda$ = 1 therefore suggests a transformation is required. This interval does contain $\lambda$ = 0 therefore suggests a log transformation.
+
+Based on the heteroscedasticity of the residual variances, and the Box-Cox output, I would suggest to transform the data via a log transformation.
+
+
+```{r}
+model2<-lm(log(Price)~Pages,textbooks)
+summary(model2)
+
+```
+The t-tests in the output are used to determine whether the coefficient of the predictor variable Pages is significantly different from 0, i.e. $H_0$: $β_1$ = 0 versus $H_a$:$β_1$ ≠ 0
+
+The p-value of the t-test for the predictor variable Pages is small, with p < 0.00001, giving evidence to reject $H_0$. There is evidence to suggest $H_a$: $β_1$ ≠ 0 i.e. the effect of the number of pages in a book on the book's price is significant in the population.
+
+Using this model, an interval estimate for the price of an individual book with 100 pages is produced.
+
+```{r}
+predict(model2, new=data.frame(Pages=100), interval="prediction")
+exp(predict(model2, new=data.frame(Pages=100), interval="prediction"))
+
+```
+The price of an individual book with Pages = 100, is predicted to be between $e^{0.9662748}$ = 2.628136 and $e^{4.218516}$ = 67.93263.
+
+
