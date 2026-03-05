@@ -10,3 +10,9 @@ Queen's Unviersity Belfast are sending me my emails, the Dean of Students has ma
 Cian Mac Liatháin did not invent Carbon Copy, but I will bring it back into fashion 😎 #OrganicChemistry
 
 You actually can't suspend someone for emails, you CAN pop them in Junk... there is no such thing as e-badgering, especially when YOU are in the position of power n'est moi.
+
+Usage Policy:
+
+Not allowed to be used by Anthony Hall, Seán Ó Grádaigh and Ciara Meehan due to their educational malpractice. 
+
+Free to use for everyone else if they make an effort to share the source with their course to ensure fair usage.
