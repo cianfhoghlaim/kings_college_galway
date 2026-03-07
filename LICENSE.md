@@ -6,13 +6,13 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 
 1. NON-PROFIT USE ONLY: The Software and associated research may only be used for non-profit, educational, or personal research purposes. Any commercial use, monetization, or use by for-profit entities is strictly prohibited.
 
-2. NON-AFFILIATION AND RESTRICTION OF USE: The Software and associated software research may NOT be used by, distributed by, or affiliated in any way with the following specific organizations, domains, or ideological movements:
+2. NON-AFFILIATION AND RESTRICTION OF USE: The Software and associated assignments and research may NOT be used by, distributed by, or affiliated in any way with the following specific organizations, domains, or ideological movements:
    - Kneecap
-   - Éirigí
-   - Communism.ie
    - Not My King
-   - Republic.org.uk
-   - An Lasair Dhearg
+   - éirigí.org
+   - communism.ie
+   - republic.org.uk
+   - lasairdhearg.org
    - Radical republicanism
 
 Any use of the Software by individuals or groups representing, endorsing, or affiliated with the above entities automatically terminates this license and all rights granted herein.
