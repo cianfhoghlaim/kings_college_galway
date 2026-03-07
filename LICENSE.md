@@ -1,4 +1,4 @@
-Copyright (c) [Year] [Your Name/Organization]
+Copyright (c) [2026] [Cian Lyons (Cian Mac Liatháin) / Cianfhoghlaim]
 
 PERMISSION AND CONDITIONS OF USE
 
