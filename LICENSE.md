@@ -17,7 +17,7 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 
 Any use of the Software by individuals or groups representing, endorsing, or affiliated with the above entities automatically terminates this license and all rights granted herein.
 
-3. NOT TO PLACE AT DISADVANTAGE: Those making use of my educational assignments should make reference to their original source, but if possible to also make an effort in college WhatsApp or other group environments to ensure that others in the associated modules are informed also so as to ensure that nobody is left at a disadvantage.
+3. NOT TO PLACE AT DISADVANTAGE: Those making use of my educational assignments should make reference to their original source, but if possible to also make an effort in college WhatsApp or other group environments to ensure that others in the associated modules are informed also so as to ensure that nobody is left at a disadvantage. This is not as relevant to those in Junior Cycle, Leaving Cycle, GCSE or A-Level, more important for those in tertiary-level education.
 
 DISCLAIMER
 THE SOFTWARE AND RESEARCH IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
