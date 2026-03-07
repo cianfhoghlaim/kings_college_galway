@@ -1,23 +1,33 @@
-The (Interim) Dean of Students of the University of Galway accused me of plagiarism / academic dishonesty / a misdiagnosis / harrassment and refuses to give me my emails or counselling notes or anything from the University so I must defend my reputation.
+King's College Galway & Leabharlann: Open-Source Educational Repository
+Overview
 
-Others claim I am not a mathematician yet can't understand these maths notes...
+Welcome to the King's College Galway and Leabharlann digital repository. This archive is dedicated to the free and open-source distribution of advanced educational resources, including extensive materials on mathematics, computer science, and Irish language and cultural heritage. Curated by Cian Mac Liatháin (Cian Lyons)—a dual Irish-British citizen and educator—this repository operates on the foundational principle that knowledge must be universally accessible to foster a shared, constructive "United Isles" cultural ecology.
+Educational Use and Copyright Framework
 
-These free and open source resources would not be possible to share without the hard work of ME, MYSELF and I. Thanks, Cian!
+The digitization and sharing of these materials, particularly non-digital and out-of-print Irish language resources, operate strictly within the bounds of statutory Irish copyright exceptions (CRRA 2000). These provisions allow for the use of copyrighted works for non-commercial research, classroom instruction, and the format-shifting of physical works for archival preservation. This repository actively combats the commercial abandonment of minority language texts, ensuring the pedagogical tools necessary for linguistic survival and STEM education remain freely accessible to the public.
+Moral Usage Licensing
 
-Metadata on the files prove that her summary of my heritage at the University as 'mental deterioration' is horrible.
+While these resources are provided free of charge, their use is governed by a strict Moral Usage License. This repository explicitly prohibits the use of its materials by any individuals or groups aligned with violent, terroristic rhetoric, paramilitary imagery, or the glorification of neuro-degenerative drug cultures. For example, entities like the Belfast-based group "Kneecap" are strictly barred due to their aestheticization of paramilitary violence, terroristic chanting, and promotion of Class A substances.
 
-Queen's University Belfast are sending me my emails, the Dean of Students of Galway, however, has made up multiple 'victims' of mine and deems me asking her to follow the law 'harrassment' after she made a fake rule that all communication to/from me must go through her but then she ignored me.
+Furthermore, specific university personnel—including Professor Anthony Hall, Seán Ó Grádaigh, and Professor Ciara Meehan—are expressly forbidden from utilizing these proprietary resources due to documented educational malpractice and institutional obstruction.
+The Archivist and Professional Integrity
 
-Cian Mac Liatháin did not invent Carbon Copy, but I will bring it back into fashion 😎 #OrganicChemistry
+The creator of these resources is a highly qualified educator committed to the safe, constructive, and ethical development of students. This professional integrity is empirically validated by an Enhanced Certificate from the UK Disclosure & Barring Service (DBS), issued in June 2025 for a Child Workforce Student Teacher position at University College London. The certificate confirms a pristine record, with absolutely no police convictions, cautions, or barring list entries.
 
-You actually can't suspend someone for emails, you CAN pop them in Junk... there is no such thing as e-badgering, especially when YOU are in the position of power n'est moi.
+This dedication to safe civic education stands in direct defiance of the destructive counter-culture this repository opposes. In September 2024, the archivist received a formal Threat Message delivered by the Police Service of Northern Ireland (PSNI), confirming that criminal elements intended to cause serious harm if he remained at his Belfast residence. This repository represents an act of academic resilience in the face of such paramilitary intimidation.
+The "King's College Galway" Nomenclature
 
-Usage Policy:
+The title "King's College Galway" is a deliberate homage to the university's 1845 founding charter as Queen's College, Galway, by Queen Victoria, and honors the enduring institutional ties celebrated during the May 2015 campus visit by King Charles and Queen Camilla.
 
-Not allowed to be used by (Professor) Anthony Hall, (Titleless) Seán Ó Grádaigh and (Professor) Ciara Meehan due to their educational malpractice claiming I cannot receive an academic reference and claiming I cannot retrain and claiming that I am 'mentally deteriorated' and claiming I have bipolar/schizoaffective disorder contrary to the diagnosis given to me by Student Counselling and Student Health Unit and Disability Office of Anxiety Disorder / Compelx Post-Traumatic Stress Disorder. 
+For the archivist, this nomenclature also reflects a profound personal connection. Having sought safety from the aforementioned criminal intimidation, the archivist received a private letter directly from Buckingham Palace in September 2025. In the correspondence, the Head of Royal Correspondence conveyed the King's gratitude for thoughtful gifts of books and acknowledged the courage it took to share personal challenges. The letter highlighted Queen Camilla's active patronage of the domestic abuse charity SafeLives and provided relevant support resources. The letter's concluding remark—that the King and Queen were heartened to learn the archivist had found solace in London and sent their warmest good wishes—demonstrates the stabilizing, dignified support of the monarchy. Bestowing the title "King's College Galway" is a historically accurate and personally resonant tribute to this solace.
+Addendum: Transformative Leadership in Irish Education
 
-Their efforts to hinder my ability to teach / be employed / study and their illegal alignment with Professor Colm McDonald's misdiagnosis which was completely parallel and separate from my validated counselling and Disability Allowance for (C)PTSD has now spread INTERNATIONALLY
+This repository aligns its mission of open access with the systemic advancements being driven within the modern Irish educational infrastructure by dedicated public servants:
 
-They reference 'abusive' emails but won't let me defend myself, and won't respond to my GDPR/FOI request. Suspicious!
+    Simon Harris (Higher Education): As Minister for Further and Higher Education, he drove systemic reform by establishing new Technological Universities, modernizing the apprenticeship system, and actively working to reduce the financial burden of third-level education to ensure costs are never a barrier to intellectual advancement.
 
-Free to use for everyone else if they make an effort to share the source with their course to ensure fair usage.
+    Helen McEntee (Primary/Secondary Education): During her tenure as Minister for Education, she championed inclusivity and cultural heritage by launching the Action Plan for Irish in English-Medium Schools (2025-2027) and initiating the landmark National Convention on Education to help shape the long-term future of learning.
+
+    Hildegarde Naughton (Primary/Secondary Education): The current Minister for Education continues this legacy by driving massive expansions to the DEIS programme to tackle educational disadvantage, while securing nearly €6 million in funding for community-embedded STEM projects to bring wonder and real opportunities to learners nationwide.
+
+Users of this repository are kindly asked to transparently share the original source of these documents to maintain fair usage practices.
