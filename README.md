@@ -26,6 +26,47 @@ The title "King's College Galway" is a deliberate homage to the university's 184
 
 For the archivist, this nomenclature also reflects a profound personal connection. Having sought safety from the aforementioned criminal intimidation, the archivist received a private letter directly from Buckingham Palace in September 2025. In the correspondence, the Head of Royal Correspondence conveyed the King's gratitude for thoughtful gifts of books and acknowledged the courage it took to share personal challenges. The letter highlighted Queen Camilla's active patronage of the domestic abuse charity SafeLives and provided relevant support resources. The letter's concluding remark—that the King and Queen were heartened to learn the archivist had found solace in London and sent their warmest good wishes—demonstrates the stabilizing, dignified support of the monarchy. Bestowing the title "King's College Galway" is a historically accurate and personally resonant tribute to this solace.
 
+## Repository Structure & Content
+
+This repository is organized into several key academic and personal directories:
+
+### Computer Science (`comp_science`)
+A comprehensive collection of coursework and assignments covering:
+*   **Databases (CT511)**: SQL testing and database management assignments.
+*   **Enterprise Java Programming (CT545)**: Advanced Java development including assignment source code.
+*   **Algorithmics (CT853)**: Java-based algorithmic problem solutions.
+*   **Computer Architecture & OS (CT861)**: Assembly language problems and network packet capture analysis.
+*   **Internet Programming (CT870)**: Web development projects using Firebase and modern web technologies.
+*   **Programming I (CT874)**: Foundational Java programming assignments.
+*   **Software Engineering I**: Course materials.
+
+### Gaeilge (`gaeilge`)
+Resources for Irish language study and preservation:
+*   **Cruinneas na Gaeilge (G100)**: Language accuracy and precision.
+*   **Ceart na Gaeilge 1 & 2 (GA101, GA201)**: Grammar and correctness, including weekly assignments and exam papers.
+*   **Saíocht na Gaeilge (GA114)**: Cultural heritage, including readings and multimedia resources.
+*   **Éisteacht agus Labhairt (GA81010)**: Listening and speaking practice at C1 level.
+*   **Found in Downloads**: Additional workshops and multimedia materials (audio, video, PDFs).
+
+### Mathematics (`mata`)
+Advanced mathematical and statistical analysis:
+*   **Networks (CS4423)**
+*   **Numerical Analysis II (MA378)**: Problem sheets.
+*   **Modelling II (MP307)**
+*   **Non-Linear Systems (MP491)**
+*   **Applied Statistics I & II (ST311, ST312)**: Extensive RMarkdown reports on statistical analysis (ANOVA, Logistic Regression).
+
+### Education (`oideachas`)
+Pedagogical resources and teaching practice records:
+*   **BME**: Materials related to Bachelor of Music/Education, including psychology assignments, placement files, and lesson plans for Maths & Applied Maths.
+*   **GCSE & A-Levels**: Syllabus and lesson materials tailored for the UK curriculum.
+*   **Tánaisteach**: Secondary school resources for English, Irish, Maths, and Geography.
+*   **Presentations**: Educational presentations.
+
+### Personal Archives
+*   **`cian/`**: This directory serves as a verification vault for the archivist's professional standing. It contains critical documentation such as the Enhanced DBS Certificate, the Teaching Registration, recent correspondence from Buckingham Palace, and evidence of the security threats that necessitated the repository's robust moral stance.
+*   **`gemini/`**: A substantial research library generated and curated for deep-dive analysis. This folder houses PDF reports, legal research, and strategic papers covering a wide array of topics including AI ethics, cross-border legal frameworks, mental health advocacy, political analysis, and technological infrastructure. It represents the intellectual "engine room" of the repository's broader mission.
+
 ## Addendum: Transformative Leadership in Irish Education
 
 This repository aligns its mission of open access with the systemic advancements being driven within the modern Irish educational infrastructure by dedicated public servants:
