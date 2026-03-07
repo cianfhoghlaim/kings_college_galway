@@ -1,0 +1,679 @@
+<!--
+
+Formulator Jigsaw Edition 2005
+Copyright (c) 2005 by Hermitech Laboratory. All Rights Reserved.
+http://www.hermitech.ic.zt.ua
+
+This file contains a summary information about the puzzle document.
+
+NOTE - Formulator Jigsaw Edition 2005 will add and remove 
+       information about the saved puzzle document in this 
+       file. Please do not edit what you see in these blocks 
+       of generated text. Changes to this file may cause 
+       incorrect behavior.
+
+-->
+
+<eqnpairs>
+  <author></author>
+  <institution></institution>
+  <comments></comments>
+  <template id='standard hexagonal jigsaw 30' left-margin='15.00' top-margin='15.00' right-margin='15.00' bottom-margin='15.00' width='210' height='297' scale='1.00' orientation='portrait'/>
+  <gui-settings>
+    <active-view view-id='input'/>
+    <active-option view-id='input' option-id='input.paired.30'/>
+    <active-option view-id='output' option-id='output.normal size'/>
+    <active-option view-id='solution' option-id='solution.full version'/>
+    <active-option view-id='table' option-id='table'/>
+  </gui-settings>
+  <eqnpair>
+    <math display="block">
+      <mrow>
+        <mi>A</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">dozen</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">crackers</mi>
+      </mrow>
+    </math>
+    <math display="block">
+      <mrow>
+        <mn>12</mn>
+      </mrow>
+    </math>
+  </eqnpair>
+  <eqnpair>
+    <math display="block">
+      <mrow>
+        <mi mathvariant="italic">Assumed</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">no</mi>
+        <mo>.</mo>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">of</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">Wise</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">Men</mi>
+      </mrow>
+    </math>
+    <math display="block">
+      <mrow>
+        <mn>3</mn>
+      </mrow>
+    </math>
+  </eqnpair>
+  <eqnpair>
+    <math display="block">
+      <mrow>
+        <mi mathvariant="italic">Days</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">of</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">Christmas</mi>
+      </mrow>
+    </math>
+    <math display="block">
+      <mrow>
+        <mn>12</mn>
+      </mrow>
+    </math>
+  </eqnpair>
+  <eqnpair>
+    <math display="block">
+      <mrow>
+        <mi mathvariant="italic">Boxing</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">Day</mi>
+      </mrow>
+    </math>
+    <math display="block">
+      <mrow>
+        <mn>26</mn>
+        <mo>&sol;</mo>
+        <mn>12</mn>
+      </mrow>
+    </math>
+  </eqnpair>
+  <eqnpair>
+    <math display="block">
+      <mrow>
+        <mi mathvariant="italic">Hogmanay</mi>
+      </mrow>
+    </math>
+    <math display="block">
+      <mrow>
+        <mn>31</mn>
+        <mo>&sol;</mo>
+        <mn>12</mn>
+      </mrow>
+    </math>
+  </eqnpair>
+  <eqnpair>
+    <math display="block">
+      <mrow>
+        <mi mathvariant="italic">Xmas</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">decorations</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">are</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">taken</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">down</mi>
+      </mrow>
+    </math>
+    <math display="block">
+      <mrow>
+        <mn>6</mn>
+        <mo>&sol;</mo>
+        <mn>1</mn>
+      </mrow>
+    </math>
+  </eqnpair>
+  <eqnpair>
+    <math display="block">
+      <mrow>
+        <mi mathvariant="italic">Stir</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">Up</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">Sunday</mi>
+        <mtext>&nbsp;</mtext>
+        <mo stretchy="false">(</mo>
+        <mn>2011</mn>
+        <mo stretchy="false">)</mo>
+      </mrow>
+    </math>
+    <math display="block">
+      <mrow>
+        <mn>20</mn>
+        <mo>&sol;</mo>
+        <mn>11</mn>
+      </mrow>
+    </math>
+  </eqnpair>
+  <eqnpair>
+    <math display="block">
+      <mrow>
+        <mi mathvariant="italic">When</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">Silent</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">Night</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">was</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">written</mi>
+      </mrow>
+    </math>
+    <math display="block">
+      <mrow>
+        <mi>c</mi>
+        <mo>.</mo>
+        <mn>1816</mn>
+      </mrow>
+    </math>
+  </eqnpair>
+  <eqnpair>
+    <math display="block">
+      <mrow>
+        <mi mathvariant="italic">Maids</mi>
+        <mtext>&nbsp;</mtext>
+        <mi>a</mi>
+        <mo>&minus;</mo>
+        <mi mathvariant="italic">milking</mi>
+      </mrow>
+    </math>
+    <math display="block">
+      <mrow>
+        <mn>8</mn>
+      </mrow>
+    </math>
+  </eqnpair>
+  <eqnpair>
+    <math display="block">
+      <mrow>
+        <mi mathvariant="italic">Shape</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">of</mi>
+        <mtext>&nbsp;</mtext>
+        <mi>a</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">Xmas</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">pudding</mi>
+      </mrow>
+    </math>
+    <math display="block">
+      <mrow>
+        <mi mathvariant="italic">Sphere</mi>
+      </mrow>
+    </math>
+  </eqnpair>
+  <eqnpair>
+    <math display="block">
+      <mrow>
+        <mi mathvariant="italic">Points</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">on</mi>
+        <mtext>&nbsp;</mtext>
+        <mi>a</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">star</mi>
+      </mrow>
+    </math>
+    <math display="block">
+      <mrow>
+        <mn>5</mn>
+      </mrow>
+    </math>
+  </eqnpair>
+  <eqnpair>
+    <math display="block">
+      <mrow>
+        <mi mathvariant="italic">No</mi>
+        <mo>.</mo>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">of</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">Snow</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">White</mi>
+        <mo lspace="0px" form="infix">'</mo>
+        <mi>s</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">dwarfs</mi>
+      </mrow>
+    </math>
+    <math display="block">
+      <mrow>
+        <mn>7</mn>
+      </mrow>
+    </math>
+  </eqnpair>
+  <eqnpair>
+    <math display="block">
+      <mrow>
+        <mi mathvariant="italic">No</mi>
+        <mo>.</mo>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">of</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">Ali</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">Baba</mi>
+        <mo lspace="0px" form="infix">'</mo>
+        <mi>s</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">thieves</mi>
+      </mrow>
+    </math>
+    <math display="block">
+      <mrow>
+        <mn>40</mn>
+      </mrow>
+    </math>
+  </eqnpair>
+  <eqnpair>
+    <math display="block">
+      <mrow>
+        <mi mathvariant="italic">There</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">was</mi>
+        <mtext>&nbsp;</mtext>
+        <mi>a</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">miracle</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">on</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">this</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">street</mi>
+      </mrow>
+    </math>
+    <math display="block">
+      <mrow>
+        <mn>34</mn>
+        <mi mathvariant="italic">th</mi>
+      </mrow>
+    </math>
+  </eqnpair>
+  <eqnpair>
+    <math display="block">
+      <mrow>
+        <mi mathvariant="italic">The</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">feast</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">of</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">Saint</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">Nicholas</mi>
+      </mrow>
+    </math>
+    <math display="block">
+      <mrow>
+        <mn>6</mn>
+        <mo>&sol;</mo>
+        <mn>12</mn>
+      </mrow>
+    </math>
+  </eqnpair>
+  <eqnpair>
+    <math display="block">
+      <mrow>
+        <mi mathvariant="italic">No</mi>
+        <mo>.</mo>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">of</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">books</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">in</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">the</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">Bible</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">that</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">tell</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">the</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">Chistmas</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">story</mi>
+      </mrow>
+    </math>
+    <math display="block">
+      <mrow>
+        <mn>2</mn>
+      </mrow>
+    </math>
+  </eqnpair>
+  <eqnpair>
+    <math display="block">
+      <mrow>
+        <mi mathvariant="italic">Where</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">Santa</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">lives</mi>
+      </mrow>
+    </math>
+    <math display="block">
+      <mrow>
+        <mn>90</mn>
+        <mi mathvariant="normal">&deg;</mi>
+        <mi>N</mi>
+      </mrow>
+    </math>
+  </eqnpair>
+  <eqnpair>
+    <math display="block">
+      <mrow>
+        <mi mathvariant="italic">The</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">shape</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">of</mi>
+        <mtext>&nbsp;</mtext>
+        <mi>a</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">mince</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">pie</mi>
+      </mrow>
+    </math>
+    <math display="block">
+      <mrow>
+        <mi mathvariant="italic">Circle</mi>
+      </mrow>
+    </math>
+  </eqnpair>
+  <eqnpair>
+    <math display="block">
+      <mrow>
+        <mi mathvariant="italic">Half</mi>
+        <mtext>&nbsp;</mtext>
+        <mi>a</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">dozen</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">mince</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">pies</mi>
+      </mrow>
+    </math>
+    <math display="block">
+      <mrow>
+        <mn>6</mn>
+      </mrow>
+    </math>
+  </eqnpair>
+  <eqnpair>
+    <math display="block">
+      <mrow>
+        <mi mathvariant="italic">Shape</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">of</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">central</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">part</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">of</mi>
+        <mtext>&nbsp;</mtext>
+        <mi>a</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">cracker</mi>
+      </mrow>
+    </math>
+    <math display="block">
+      <mrow>
+        <mi mathvariant="italic">Cylinder</mi>
+      </mrow>
+    </math>
+  </eqnpair>
+  <eqnpair>
+    <math display="block">
+      <mrow>
+        <mi mathvariant="italic">Winter</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">Solstice</mi>
+        <mtext>&nbsp;</mtext>
+        <mn>2011</mn>
+        <mtext>&nbsp;</mtext>
+      </mrow>
+    </math>
+    <math display="block">
+      <mrow>
+        <mn>21</mn>
+        <mo>&sol;</mo>
+        <mn>12</mn>
+      </mrow>
+    </math>
+  </eqnpair>
+  <eqnpair>
+<math display = 'block'>
+  <mrow>
+    <mi mathvariant = 'italic'>Height</mi>
+    <mtext>&nbsp;</mtext>
+    <mi mathvariant = 'italic'>of</mi>
+    <mtext>&nbsp;</mtext>
+    <mi mathvariant = 'italic'>Xmas</mi>
+    <mtext>&nbsp;</mtext>
+    <mi mathvariant = 'italic'>tree</mi>
+    <mtext>&nbsp;</mtext>
+    <mi mathvariant = 'italic'>in</mi>
+    <mtext>&nbsp;</mtext>
+    <mi mathvariant = 'italic'>Trafalgar</mi>
+    <mtext>&nbsp;</mtext>
+    <mi mathvariant = 'italic'>Square</mi>
+  </mrow>
+</math>
+    <math display="block">
+      <mrow>
+        <mn>60</mn>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">feet</mi>
+      </mrow>
+    </math>
+  </eqnpair>
+  <eqnpair>
+    <math display="block">
+      <mrow>
+        <mi mathvariant="italic">Total</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">no</mi>
+        <mo>.</mo>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">of</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">gifts</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">my</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">true</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">love</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">sent</mi>
+        <mtext>&nbsp;</mtext>
+      </mrow>
+    </math>
+    <math display="block">
+      <mrow>
+        <mn>364</mn>
+      </mrow>
+    </math>
+  </eqnpair>
+  <eqnpair>
+    <math display="block">
+      <mrow>
+        <mi mathvariant="italic">Location</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">of</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">Bethlehem</mi>
+      </mrow>
+    </math>
+    <math display="block">
+      <mrow>
+        <mn>31</mn>
+        <mo lspace="0px" rspace="0px">°&nbsp;</mo>
+        <mn>42</mn>
+        <mi>N</mi>
+        <mo>,</mo>
+        <mn>35</mn>
+        <mo lspace="0px" rspace="0px">°&nbsp;</mo>
+        <mn>12</mn>
+        <mo lspace="0px" form="infix">'</mo>
+        <mi>E</mi>
+      </mrow>
+    </math>
+  </eqnpair>
+  <eqnpair>
+    <math display="block">
+      <mrow>
+        <mi mathvariant="italic">No</mi>
+        <mo>.</mo>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">of</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">Santa</mi>
+        <mo lspace="0px" form="infix">'</mo>
+        <mi>s</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">reindeer</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">with</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">names</mi>
+        <mtext>&nbsp;</mtext>
+      </mrow>
+    </math>
+    <math display="block">
+      <mrow>
+        <mn>9</mn>
+      </mrow>
+    </math>
+  </eqnpair>
+  <eqnpair>
+    <math display="block">
+      <mrow>
+        <mi mathvariant="italic">When</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">the</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">song</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">White</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">Christmas</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">was</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">written</mi>
+      </mrow>
+    </math>
+    <math display="block">
+      <mrow>
+        <mn>1942</mn>
+      </mrow>
+    </math>
+  </eqnpair>
+  <eqnpair>
+    <math display="block">
+      <mrow>
+        <mi mathvariant="italic">Swans</mi>
+        <mtext>&nbsp;</mtext>
+        <mi>a</mi>
+        <mo>&minus;</mo>
+        <mi mathvariant="italic">swimming</mi>
+      </mrow>
+    </math>
+    <math display="block">
+      <mrow>
+        <mn>7</mn>
+      </mrow>
+    </math>
+  </eqnpair>
+  <eqnpair>
+    <math display="block">
+      <mrow>
+        <mi mathvariant="italic">Lords</mi>
+        <mtext>&nbsp;</mtext>
+        <mi>a</mi>
+        <mo>&minus;</mo>
+        <mi mathvariant="italic">leaping</mi>
+      </mrow>
+    </math>
+    <math display="block">
+      <mrow>
+        <mn>10</mn>
+      </mrow>
+    </math>
+  </eqnpair>
+  <eqnpair>
+    <math display="block">
+      <mrow>
+        <mi mathvariant="italic">Distance</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">from</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">Nazareth</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">to</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">Bethlehem</mi>
+      </mrow>
+    </math>
+    <math display="block">
+      <mrow>
+        <mn>100</mn>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">miles</mi>
+      </mrow>
+    </math>
+  </eqnpair>
+  <eqnpair>
+    <math display="block">
+      <mrow>
+        <mi mathvariant="italic">No</mi>
+        <mo>.</mo>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">of</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">Xmas</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">trees</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">sold</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">every</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">year</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">in</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">the</mi>
+        <mtext>&nbsp;</mtext>
+        <mi mathvariant="italic">UK</mi>
+      </mrow>
+    </math>
+    <math display="block">
+      <mrow>
+        <mn>8</mn>
+        <mtext>&nbsp;</mtext>
+        <mn>000</mn>
+        <mtext>&nbsp;</mtext>
+        <mn>000</mn>
+      </mrow>
+    </math>
+  </eqnpair>
+</eqnpairs>
