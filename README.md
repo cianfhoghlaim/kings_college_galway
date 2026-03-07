@@ -58,7 +58,7 @@ Advanced mathematical and statistical analysis:
 
 ### Education (`oideachas`)
 Pedagogical resources and teaching practice records:
-*   **BME**: Materials related to Bachelor of Music/Education, including psychology assignments, placement files, and lesson plans for Maths & Applied Maths.
+*   **BME**: Materials related to Bachelor of Mathematics and Education, including psychology assignments, placement files, and lesson plans for Maths & Applied Maths.
 *   **GCSE & A-Levels**: Syllabus and lesson materials tailored for the UK curriculum.
 *   **Tánaisteach**: Secondary school resources for English, Irish, Maths, and Geography.
 *   **Presentations**: Educational presentations.
@@ -71,10 +71,10 @@ Pedagogical resources and teaching practice records:
 
 This repository aligns its mission of open access with the systemic advancements being driven within the modern Irish educational infrastructure by dedicated public servants:
 
-    Simon Harris (Higher Education): As Minister for Further and Higher Education, he drove systemic reform by establishing new Technological Universities, modernizing the apprenticeship system, and actively working to reduce the financial burden of third-level education to ensure costs are never a barrier to intellectual advancement.
+Simon Harris (Higher Education): As Minister for Further and Higher Education, he drove systemic reform by establishing new Technological Universities, modernizing the apprenticeship system, and actively working to reduce the financial burden of third-level education to ensure costs are never a barrier to intellectual advancement.
 
-    Helen McEntee (Primary/Secondary Education): During her tenure as Minister for Education, she championed inclusivity and cultural heritage by launching the Action Plan for Irish in English-Medium Schools (2025-2027) and initiating the landmark National Convention on Education to help shape the long-term future of learning.
+Helen McEntee (Primary/Secondary Education): During her tenure as Minister for Education, she championed inclusivity and cultural heritage by launching the Action Plan for Irish in English-Medium Schools (2025-2027) and initiating the landmark National Convention on Education to help shape the long-term future of learning.
 
-    Hildegarde Naughton (Primary/Secondary Education): The current Minister for Education continues this legacy by driving massive expansions to the DEIS programme to tackle educational disadvantage, while securing nearly €6 million in funding for community-embedded STEM projects to bring wonder and real opportunities to learners nationwide.
+Hildegarde Naughton (Primary/Secondary Education): The current Minister for Education continues this legacy by driving massive expansions to the DEIS programme to tackle educational disadvantage, while securing nearly €6 million in funding for community-embedded STEM projects to bring wonder and real opportunities to learners nationwide.
 
 Users of this repository are kindly asked to transparently share the original source of these documents to maintain fair usage practices.
