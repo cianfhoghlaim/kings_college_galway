@@ -9,11 +9,15 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 2. NON-AFFILIATION AND RESTRICTION OF USE: The Software and associated assignments and research may NOT be used by, distributed by, or affiliated in any way with the following specific organizations, domains, or ideological movements:
    - Kneecap
    - Not My King
+   - Radical republicanism
+   - Elon Musk / Andrew Tate / Red Pill 'white power' and 'male power' movements
+   - Jordan Peterson and promoters of manipulative psychology
+   - Members of LGBT+ groups that promote Bisexual Erasure or Radical (not trauma-informed) Transgenderism 
    - éirigí.org
    - communism.ie
    - republic.org.uk
    - lasairdhearg.org
-   - Radical republicanism
+
 
 Any use of the Software by individuals or groups representing, endorsing, or affiliated with the above entities automatically terminates this license and all rights granted herein.
 
