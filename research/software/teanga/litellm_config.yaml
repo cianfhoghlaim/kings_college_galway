@@ -1,0 +1,478 @@
+# LiteLLM Configuration File
+# ==========================
+# Documentation: https://docs.litellm.ai/docs/
+#
+# Architecture:
+#   LiteLLM Gateway (:4000)
+#   ├── InvokeAI (:9090) - Image generation (Z-Image-Turbo, SDXL)
+#   ├── mlx-omni-server (:10240) - MLX models on Apple Silicon
+#   ├── llama-swap (:8080) - GGUF models via llama.cpp
+#   └── Cloud Providers - Gemini, Z.ai (GLM)
+#
+# Fallback Chains (per project requirements):
+#   Extraction: gemini-2.5-pro -> glm-4.6v -> gemini-2.5-flash
+#   OCR: olmocr2-7b -> granite-docling
+#   Vision: qwen3-vl-30b -> glm-4.6v -> gemma-27b-vision
+#
+# Model Naming Convention:
+#   local/ocr/*       - OCR and document processing
+#   local/vision/*    - Vision/VLM models
+#   local/image/*     - Image generation (InvokeAI primary, MLX fallback)
+#   local/general/*   - General purpose
+#
+# Aliases:
+#   ocr        -> local/ocr/olmocr2-7b (MLX)
+#   vision     -> local/vision/qwen3-vl-30b (GGUF)
+#   document   -> local/document/granite-docling (MLX)
+#   extract    -> gemini-2.5-pro (Cloud)
+#   image      -> Z-Image-Turbo (InvokeAI)
+
+model_list:
+
+  # ===========================================================================
+  # LOCAL MLX MODELS (via mlx-omni-server :10240)
+  # ===========================================================================
+
+  # OCR - Primary document processing model
+  - model_name: local/ocr/olmocr2-7b
+    litellm_params:
+      model: openai/olmocr2-7b
+      api_base: http://host.docker.internal:10240/v1
+      api_key: not-needed
+    model_info:
+      description: "OCR model for document text extraction (MLX 8-bit)"
+      capabilities: ["ocr", "document_parsing", "text_extraction"]
+
+  # Document Layout Understanding
+  - model_name: local/document/granite-docling
+    litellm_params:
+      model: openai/granite-docling
+      api_base: http://host.docker.internal:10240/v1
+      api_key: not-needed
+    model_info:
+      description: "Document layout understanding (IBM Granite MLX)"
+      capabilities: ["document_layout", "table_extraction"]
+
+  # Image Generation (MLX - lightweight fallback)
+  - model_name: local/image/fibo
+    litellm_params:
+      model: openai/fibo-mlx
+      api_base: http://host.docker.internal:10240/v1
+      api_key: not-needed
+    model_info:
+      description: "Image generation model (Fibo MLX 8-bit) - lightweight fallback"
+      capabilities: ["image_generation", "text_to_image"]
+
+  # ===========================================================================
+  # LOCAL INVOKEAI MODELS (via InvokeAI :9090)
+  # ===========================================================================
+
+  # Z-Image-Turbo - Fast image generation (FLUX quality at SDXL speed)
+  - model_name: local/image/z-image-turbo
+    litellm_params:
+      model: openai/z-image-turbo
+      api_base: http://host.docker.internal:9090/v1
+      api_key: not-needed
+    model_info:
+      description: "Fast Lumina2-based image generation (Alibaba Z-Image-Turbo)"
+      capabilities: ["image_generation", "text_to_image", "fast_inference", "regional_guidance"]
+
+  # SDXL Base - High quality image generation
+  - model_name: local/image/sdxl
+    litellm_params:
+      model: openai/sdxl-base
+      api_base: http://host.docker.internal:9090/v1
+      api_key: not-needed
+    model_info:
+      description: "High-quality SDXL image generation (InvokeAI)"
+      capabilities: ["image_generation", "text_to_image", "inpainting", "outpainting"]
+
+  # ===========================================================================
+  # LOCAL GGUF MODELS (via llama-swap :8080)
+  # ===========================================================================
+
+  # OCR - GGUF fallback (via llama-swap)
+  - model_name: local/ocr/olmocr2-7b-gguf
+    litellm_params:
+      model: openai/olmocr2-7b
+      api_base: http://host.docker.internal:8080/v1
+      api_key: not-needed
+    model_info:
+      description: "OCR model for document processing (GGUF Q4_K_M)"
+      capabilities: ["ocr", "document_parsing"]
+
+  # Vision - Qwen3 VL
+  - model_name: local/vision/qwen3-vl
+    litellm_params:
+      model: openai/qwen3-vl-30b
+      api_base: http://host.docker.internal:8080/v1
+      api_key: not-needed
+    model_info:
+      description: "Vision-Language model for multimodal understanding"
+      capabilities: ["vision", "vlm", "image_understanding"]
+
+  # Vision - Gemma 27B
+  - model_name: local/vision/gemma-27b
+    litellm_params:
+      model: openai/gemma-27b-vision
+      api_base: http://host.docker.internal:8080/v1
+      api_key: not-needed
+    model_info:
+      description: "Gemma 27B with vision capabilities (GGUF)"
+      capabilities: ["vision", "general", "instruction_following"]
+
+  # General - Gemma 3n (lightweight)
+  - model_name: local/general/gemma-3n
+    litellm_params:
+      model: openai/gemma-3n
+      api_base: http://host.docker.internal:8080/v1
+      api_key: not-needed
+    model_info:
+      description: "Lightweight Gemma for fast inference (GGUF)"
+      capabilities: ["general", "fast_inference"]
+
+  # General - Qwen3 Next 80B (heavy reasoning)
+  - model_name: local/general/qwen3-next-80b
+    litellm_params:
+      model: openai/qwen3-next-80b
+      api_base: http://host.docker.internal:8080/v1
+      api_key: not-needed
+    model_info:
+      description: "Large Qwen model for complex reasoning"
+      capabilities: ["reasoning", "complex_tasks"]
+
+  # ===========================================================================
+  # CELTIC LANGUAGE MODELS (via HuggingFace TGI or transformers)
+  # ===========================================================================
+  # Note: These require downloading from HuggingFace and serving via TGI
+  # Status: catalog (not yet deployed locally)
+
+  # Irish LLMs
+  - model_name: celtic/irish/qomhra-7b
+    litellm_params:
+      model: huggingface/Qomhraiche/Qomhra-Mistral-7B
+      api_key: os.environ/HF_TOKEN
+    model_info:
+      description: "Irish conversational AI based on Mistral 7B"
+      capabilities: ["irish_conversation", "irish_instruction_following"]
+      status: "catalog"
+
+  - model_name: celtic/irish/uccix-13b
+    litellm_params:
+      model: huggingface/UCC-NLP/UCCIX-Llama2-13B
+      api_key: os.environ/HF_TOKEN
+    model_info:
+      description: "Irish-enhanced LLM based on Llama 2 (UCC NLP)"
+      capabilities: ["irish_generation", "irish_instruction_following"]
+      status: "catalog"
+
+  - model_name: celtic/irish/salamandra-2b
+    litellm_params:
+      model: huggingface/BSC-LT/salamandra-2b
+      api_key: os.environ/HF_TOKEN
+    model_info:
+      description: "Multilingual model with Irish support (BSC)"
+      capabilities: ["irish_generation", "multilingual"]
+      status: "catalog"
+
+  # Multilingual Celtic LLMs
+  - model_name: celtic/multilingual/britllm-3b
+    litellm_params:
+      model: huggingface/britllm/britllm-3b-v0.1
+      api_key: os.environ/HF_TOKEN
+    model_info:
+      description: "British Isles multilingual LLM (Irish, Scottish Gaelic, Welsh)"
+      capabilities: ["celtic_language_generation", "ga", "gd", "cy"]
+      status: "catalog"
+
+  - model_name: celtic/multilingual/eurollm-22b
+    litellm_params:
+      model: huggingface/utter-project/EuroLLM-22B-Instruct-2512
+      api_key: os.environ/HF_TOKEN
+    model_info:
+      description: "EU multilingual LLM with Irish support (22.6B params)"
+      capabilities: ["instruction_following", "translation", "ga"]
+      status: "catalog"
+
+  # Celtic Translation Models
+  - model_name: celtic/translation/nllb
+    litellm_params:
+      model: huggingface/facebook/nllb-200-distilled-600M
+      api_key: os.environ/HF_TOKEN
+    model_info:
+      description: "200-language translation (Irish, Scottish Gaelic, Welsh, Breton)"
+      capabilities: ["translation", "ga", "gd", "cy", "br"]
+      status: "catalog"
+
+  - model_name: celtic/translation/seamless
+    litellm_params:
+      model: huggingface/facebook/seamless-m4t-v2-large
+      api_key: os.environ/HF_TOKEN
+    model_info:
+      description: "Multilingual translation + speech-to-text (Irish, Welsh)"
+      capabilities: ["speech_to_text", "translation", "ga", "cy"]
+      status: "catalog"
+
+  # Celtic Encoder Models (for NLU tasks)
+  - model_name: celtic/encoder/gabert
+    litellm_params:
+      model: huggingface/DCU-NLP/bert-base-irish-cased-v1
+      api_key: os.environ/HF_TOKEN
+    model_info:
+      description: "Irish BERT for NER, POS tagging, classification"
+      capabilities: ["ner", "pos_tagging", "classification", "ga"]
+      status: "catalog"
+
+  - model_name: celtic/encoder/welsh-bert
+    litellm_params:
+      model: huggingface/Portalingual/Welsh-BERT
+      api_key: os.environ/HF_TOKEN
+    model_info:
+      description: "Welsh BERT for NLU tasks"
+      capabilities: ["welsh_nlu", "classification", "cy"]
+      status: "catalog"
+
+  # ===========================================================================
+  # CLOUD MODELS - Google Gemini
+  # ===========================================================================
+
+  - model_name: gemini-2.0-flash
+    litellm_params:
+      model: gemini/gemini-2.0-flash-exp
+      api_key: os.environ/GEMINI_API_KEY
+
+  - model_name: gemini-2.5-flash
+    litellm_params:
+      model: gemini/gemini-2.5-flash-preview-05-20
+      api_key: os.environ/GEMINI_API_KEY
+
+  - model_name: gemini-2.5-pro
+    litellm_params:
+      model: gemini/gemini-2.5-pro-preview-06-05
+      api_key: os.environ/GEMINI_API_KEY
+
+  - model_name: gemini-1.5-flash
+    litellm_params:
+      model: gemini/gemini-1.5-flash
+      api_key: os.environ/GEMINI_API_KEY
+
+  # ===========================================================================
+  # CLOUD MODELS - Z.ai (GLM)
+  # ===========================================================================
+
+  - model_name: glm-4.6
+    litellm_params:
+      model: openai/glm-4.6
+      api_base: https://api.z.ai/api/coding/paas/v4
+      api_key: os.environ/Z_API_KEY
+
+  - model_name: glm-4.6v
+    litellm_params:
+      model: openai/glm-4.6v
+      api_base: https://api.z.ai/api/coding/paas/v4
+      api_key: os.environ/Z_API_KEY
+
+
+  # ===========================================================================
+  # MODEL ALIASES (convenience shortcuts)
+  # ===========================================================================
+
+  # Alias: ocr -> primary OCR model (MLX)
+  - model_name: ocr
+    litellm_params:
+      model: openai/olmocr2-7b
+      api_base: http://host.docker.internal:10240/v1
+      api_key: not-needed
+
+  # Alias: vision -> primary vision model (GGUF via llama-swap)
+  - model_name: vision
+    litellm_params:
+      model: openai/qwen3-vl-30b
+      api_base: http://host.docker.internal:8080/v1
+      api_key: not-needed
+
+  # Alias: document -> document processing (MLX)
+  - model_name: document
+    litellm_params:
+      model: openai/granite-docling
+      api_base: http://host.docker.internal:10240/v1
+      api_key: not-needed
+
+  # Alias: extract -> structured extraction (gemini-2.5-pro with fallbacks)
+  - model_name: extract
+    litellm_params:
+      model: gemini/gemini-2.5-pro-preview-06-05
+      api_key: os.environ/GEMINI_API_KEY
+
+  # Alias: image -> fast image generation (Z-Image-Turbo)
+  - model_name: image
+    litellm_params:
+      model: openai/z-image-turbo
+      api_base: http://host.docker.internal:9090/v1
+      api_key: not-needed
+
+  # Alias: image-hq -> high quality image generation (SDXL)
+  - model_name: image-hq
+    litellm_params:
+      model: openai/sdxl-base
+      api_base: http://host.docker.internal:9090/v1
+      api_key: not-needed
+
+  # Alias: image-fast -> lightweight image generation (Fibo MLX)
+  - model_name: image-fast
+    litellm_params:
+      model: openai/fibo-mlx
+      api_base: http://host.docker.internal:10240/v1
+      api_key: not-needed
+
+  # Alias: fast -> lightweight general model (GGUF via llama-swap)
+  - model_name: fast
+    litellm_params:
+      model: openai/gemma-3n
+      api_base: http://host.docker.internal:8080/v1
+      api_key: not-needed
+
+  # ===========================================================================
+  # CELTIC MODEL ALIASES
+  # ===========================================================================
+
+  # Alias: irish -> primary Irish LLM (Qomhrá)
+  - model_name: irish
+    litellm_params:
+      model: huggingface/Qomhraiche/Qomhra-Mistral-7B
+      api_key: os.environ/HF_TOKEN
+
+  # Alias: gaelic -> British Isles multilingual (Irish, Scottish Gaelic, Welsh)
+  - model_name: gaelic
+    litellm_params:
+      model: huggingface/britllm/britllm-3b-v0.1
+      api_key: os.environ/HF_TOKEN
+
+  # Alias: welsh -> Welsh model (BritLLM with Welsh capability)
+  - model_name: welsh
+    litellm_params:
+      model: huggingface/britllm/britllm-3b-v0.1
+      api_key: os.environ/HF_TOKEN
+
+  # Alias: celtic-translate -> NLLB translation for Celtic languages
+  - model_name: celtic-translate
+    litellm_params:
+      model: huggingface/facebook/nllb-200-distilled-600M
+      api_key: os.environ/HF_TOKEN
+
+  # Alias: irish-ner -> Irish NER/classification (gaBERT)
+  - model_name: irish-ner
+    litellm_params:
+      model: huggingface/DCU-NLP/bert-base-irish-cased-v1
+      api_key: os.environ/HF_TOKEN
+
+# ===========================================================================
+# ROUTER SETTINGS
+# ===========================================================================
+
+router_settings:
+  routing_strategy: simple-shuffle
+  num_retries: 3
+  timeout: 120
+  allowed_fails: 2
+
+# ===========================================================================
+# GENERAL SETTINGS
+# ===========================================================================
+
+general_settings:
+  master_key: os.environ/LITELLM_MASTER_KEY
+  database_url: os.environ/DATABASE_URL
+
+# ===========================================================================
+# LITELLM SETTINGS
+# ===========================================================================
+
+litellm_settings:
+  success_callback: ["langfuse"]
+  failure_callback: ["langfuse"]
+  set_verbose: true
+  drop_params: true
+
+  # Fallback configuration (per project requirements)
+  # Extraction: gemini-2.5-pro -> glm-4.6v -> gemini-2.5-flash
+  # OCR: olmocr2-7b -> granite-docling
+  # Vision: qwen3-vl-30b -> glm-4.6v -> gemma-27b-vision
+  fallbacks:
+    # Extraction chain: gemini-2.5-pro -> glm-4.6v -> gemini-2.5-flash
+    - gemini-2.5-pro: [glm-4.6v, gemini-2.5-flash]
+    - extract: [glm-4.6v, gemini-2.5-flash]
+
+    # OCR chain: olmocr2-7b -> granite-docling
+    - local/ocr/olmocr2-7b: [local/document/granite-docling]
+    - ocr: [document]
+
+    # Vision chain: qwen3-vl-30b -> glm-4.6v -> gemma-27b-vision
+    - local/vision/qwen3-vl: [glm-4.6v, local/vision/gemma-27b]
+    - vision: [glm-4.6v, local/vision/gemma-27b]
+
+    # General fallback
+    - local/general/gemma-3n: [glm-4.6]
+
+    # Image generation fallbacks
+    - local/image/z-image-turbo: [local/image/sdxl, local/image/fibo]
+    - local/image/sdxl: [local/image/z-image-turbo, local/image/fibo]
+
+    # Celtic language fallbacks
+    # Irish: qomhra-7b -> uccix-13b -> britllm-3b -> salamandra-2b
+    - celtic/irish/qomhra-7b: [celtic/irish/uccix-13b, celtic/multilingual/britllm-3b, celtic/irish/salamandra-2b]
+    - irish: [celtic/irish/uccix-13b, celtic/multilingual/britllm-3b]
+
+    # Gaelic (multilingual): britllm-3b -> nllb translation
+    - celtic/multilingual/britllm-3b: [celtic/translation/nllb]
+    - gaelic: [celtic/translation/nllb]
+
+    # Celtic translation: nllb -> seamless
+    - celtic/translation/nllb: [celtic/translation/seamless]
+    - celtic-translate: [celtic/translation/seamless]
+
+# ===========================================================================
+# MCP SERVERS (Claude Code Integration)
+# ===========================================================================
+# These MCP servers integrate with Claude Code for web scraping and browser automation.
+# Environment variables are sourced from litellm.env (via 1Password).
+
+mcpServers:
+  # Web scraping via Firecrawl API
+  firecrawl:
+    type: stdio
+    command: npx
+    args:
+      - "-y"
+      - "firecrawl-mcp"
+    env:
+      FIRECRAWL_API_KEY: os.environ/FIRECRAWL_API_KEY
+
+  # Browser automation via Browserbase
+  browserbase:
+    type: stdio
+    command: npx
+    args:
+      - "@browserbasehq/mcp-server-browserbase"
+    env:
+      BROWSERBASE_API_KEY: os.environ/BROWSERBASE_API_KEY
+      BROWSERBASE_PROJECT_ID: os.environ/BROWSERBASE_PROJECT_ID
+      GEMINI_API_KEY: os.environ/BROWSERBASE_GEMINI_API_KEY
+
+  # Z.ai MCP server for GLM model access
+  zai-mcp-server:
+    type: stdio
+    command: npx
+    args:
+      - "-y"
+      - "@z_ai/mcp-server"
+    env:
+      Z_AI_API_KEY: os.environ/Z_AI_API_KEY
+      Z_AI_MODE: ZAI
+
+  # Z.ai Web Search Prime (HTTP endpoint)
+  web-search-prime:
+    type: streamable-http
+    url: https://api.z.ai/api/mcp/web_search_prime/mcp
+    headers:
+      Authorization: Bearer ${Z_AI_API_KEY}

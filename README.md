@@ -63,6 +63,14 @@ Pedagogical resources and teaching practice records:
 *   **Tánaisteach**: Secondary school resources for English, Irish, Maths, and Geography.
 *   **Presentations**: Educational presentations.
 
+### Technical Knowledge Base (`markdown`)
+A dynamic and extensive library of technical documentation, research notes, and architectural blueprints. This folder serves as the development wiki for the project, covering:
+*   **AI & LLM Integration**: Documentation on Model Context Protocol (MCP), local LLM deployment (Unsloth), AI agents, and prompt engineering.
+*   **Data Engineering**: Guides for Dagster pipelines, DLT (Data Load Tool), DuckDB, and data lake architectures.
+*   **Infrastructure & DevOps**: Setup guides for Docker, Kubernetes, Hetzner cloud resources, and self-hosted services (Komodo, Traefik).
+*   **Web Development**: Technical stacks including TanStack, microfrontends, and authentication systems.
+*   **Celtic Digital Humanities**: Research on Irish language models, handwriting recognition, and educational data scraping.
+
 ### Personal Archives
 *   **`cian/`**: This directory serves as a verification vault for the archivist's professional standing. It contains critical documentation such as the Enhanced DBS Certificate, the Teaching Registration, recent correspondence from Buckingham Palace, and evidence of the security threats that necessitated the repository's robust moral stance.
 *   **`gemini/`**: A substantial research library generated and curated for deep-dive analysis. This folder houses PDF reports, legal research, and strategic papers covering a wide array of topics including AI ethics, cross-border legal frameworks, mental health advocacy, political analysis, and technological infrastructure. It represents the intellectual "engine room" of the repository's broader mission.
